@@ -1,0 +1,20 @@
+:root {
+  --text-main-color: #1d515d;
+  --bg-main-color: #1d515d;
+  --text-secondary-color: #d38b24;
+  --bg-secondary-color: #d38b24;
+  --text-second-color: #2ea7db;
+  --bg-second-color: #2ea7db;
+  --text-white-color: #fff;
+  --bg-white-color: #fff;
+  --bg-gray-color: #f2f4f7;
+  --bg-light-gray: #fcfcfd;
+  --text-gray-500: #667085;
+  --text-gray-600: #475467;
+  --text-gray-light: #d0d5dd;
+  --darkBlue: #1c3481;
+  --text-gray: #1d2939;
+  --white: #fff;
+  --dark: #111;
+  --gray-900: #101828;
+}
