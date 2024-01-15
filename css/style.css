@@ -76,9 +76,8 @@
 /* hero-section */
 #hero-section {
   min-height: 100vh;
-  background-color: #0a1f2b;
   background-image: url(../images/home/hero-bg.svg);
-  background-position: center top;
+  background-position: 50%;
   background-repeat: no-repeat;
 }
 .contact-btn,
@@ -92,6 +91,43 @@
 #hero-section .title {
   font-size: 5rem;
 }
+/* ======ABOUT US======= */
+#about-us .about-content {
+  background-image: url(../images/home/about-bg.svg);
+  background-repeat: no-repeat;
+  background-position: 75% 72%;
+  border: 1px solid var(--bg-white-color);
+  border-radius: 15px;
+  overflow: hidden;
+}
+#about-us .about-second-bg {
+  background-image: url(../images/home/about-second-bg.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 80px;
+}
+#about-us .about-third-bg {
+  background-image: url(../images/home/about-third-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 80px;
+}
+/* =========VISION AND MISSION ==========*/
+#vision-mission {
+  padding-top: 5rem;
+  background-image: url(../images/home/tech-icon.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 25%;
+}
+#vision-mission .vision,
+#vision-mission .mission {
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  border: 2px solid #343957;
+}
+
 /* =========== */
 #footer {
   background-color: var(--bg-main-color);
