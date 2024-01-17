@@ -3,17 +3,23 @@
 @media (min-width: 992px) {
 }
 @media (max-width: 991px) {
+  #objectives .objective-content:nth-of-type(2) {
+    background-image: none;
+  }
 }
 @media (min-width: 768px) {
 }
 @media (max-width: 767px) {
+  #objectives .objective-content {
+    background-position: bottom;
+    background-image: url(../images/home/objectives/line-2.svg);
+    background-size: 50%;
+  }
+  #objectives .objective-content:nth-of-type(2) {
+    background-image: url(../images/home/objectives/line-2.svg);
+  }
 }
 @media (max-width: 565px) {
-  #hero-section,
-  #hero-section .single-banner-slide,
-  #hero-section .banner-content {
-    min-height: calc(70vh - 110px) !important;
-  }
 }
 @media (max-width: 465px) {
 }

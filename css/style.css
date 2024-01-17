@@ -127,7 +127,39 @@
   height: 100px;
   border: 2px solid #343957;
 }
-
+/* ============Objectives============ */
+#objectives .header-title {
+  background-image: url(../images/home/objective-vector.svg);
+  width: fit-content;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+#objectives .start-ups {
+  color: #1597a6;
+}
+#objectives .network {
+  color: #c294ff;
+}
+#objectives .capacity {
+  color: #ffba7a;
+}
+#objectives .market {
+  color: #96568f;
+}
+#objectives .objectives-info {
+  border: 2px solid #2f3c3e;
+  border-radius: 20px;
+}
+#objectives .objective-content {
+  background-image: url(../images/home/objectives/line.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+#objectives .objective-content:nth-of-type(4) {
+  background-image: none;
+}
 /* =========== */
 #footer {
   background-color: var(--bg-main-color);
