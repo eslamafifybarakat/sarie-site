@@ -178,6 +178,29 @@
   background-position: center;
   background-size: 300px;
 }
+
+/* ============polarize-startups =========*/
+#polarize-startups .startups-content {
+  border: 2px solid #60efff24;
+  margin-left: -50px;
+  padding: 1.2rem 1.2rem 1.2rem 3.8rem;
+  background-color: #0a1720;
+}
+#polarize-startups .number {
+  width: 80px;
+  min-width: 80px;
+  height: 80px;
+  z-index: 1;
+}
+.number-1 {
+  background-color: #1597a6;
+}
+.number-2 {
+  background-color: #6078b8f2;
+}
+.number-3 {
+  background-color: #c579be;
+}
 /* =========== */
 #footer {
   background-color: var(--bg-main-color);
