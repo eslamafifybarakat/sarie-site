@@ -201,6 +201,43 @@
 .number-3 {
   background-color: #c579be;
 }
+/* =========join========= */
+#join .join-content {
+  padding: 0.7rem;
+}
+#join .join-content-1 {
+  background: linear-gradient(
+    89.8deg,
+    rgba(255, 255, 255, 0.51) 0.15%,
+    rgba(21, 151, 166, 0.37) 100.01%
+  );
+}
+#join .join-content-2 {
+  background: linear-gradient(
+    89.8deg,
+    rgba(255, 255, 255, 0.51) 0.15%,
+    #5142f1 100.01%
+  );
+}
+#join .join-content-3 {
+  background: linear-gradient(
+    89.8deg,
+    rgba(255, 255, 255, 0.51) 27.2%,
+    #a83e9e 100.01%
+  );
+}
+#join .join-content-4 {
+  background: linear-gradient(
+    89.8deg,
+    rgba(227, 233, 247, 0.51) 0.15%,
+    rgba(185, 110, 22, 0.79) 100.01%
+  );
+}
+#join .number {
+  width: 65px;
+  min-width: 65px;
+  height: 65px;
+}
 /* =========== */
 #footer {
   background-color: var(--bg-main-color);
