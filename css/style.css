@@ -128,7 +128,7 @@
   border: 2px solid #343957;
 }
 /* ============Objectives============ */
-#objectives .header-title {
+.header-title {
   background-image: url(../images/home/objective-vector.svg);
   width: fit-content;
   background-size: contain;
@@ -159,6 +159,24 @@
 }
 #objectives .objective-content:nth-of-type(4) {
   background-image: none;
+}
+/* ============benefits========== */
+#benefits .benefit-content {
+  border: 1px solid #ffffff69;
+  background: linear-gradient(0deg, #0c1a22, #0c1a22),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.41) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  border-radius: 13px;
+  padding: 2rem 1.5rem;
+}
+.benefits-info {
+  background-image: url(../images/home/benefits/benefits-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px;
 }
 /* =========== */
 #footer {
