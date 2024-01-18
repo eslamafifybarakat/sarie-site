@@ -17,21 +17,25 @@ a:focus {
   text-decoration: none;
   color: inherit;
 }
-.navbar .dropdown-menu {
-  left: 0 !important;
-  right: inherit !important;
-}
 .buttonUp {
   left: 30px !important;
   right: inherit !important;
 }
-#hero-section .owl-nav .owl-next,
-#hero-section .owl-nav .owl-prev {
-  transform: rotate(270deg);
+#vision-mission {
+  background-image: url(../images/home/tech-icon-rtl.svg) !important;
+  background-position: left;
 }
-.owl-carousel.owl-rtl .owl-item {
-  direction: rtl !important;
+#objectives .objective-content {
+  background-position: left;
 }
-
+#polarize-startups .startups-content {
+  margin-right: -50px !important;
+  margin-left: 0 !important;
+}
 @media (min-width: 768px) {
+}
+@media (max-width: 565px) {
+  #polarize-startups .startups-content {
+    margin: 0 !important;
+  }
 }

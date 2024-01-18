@@ -19,7 +19,7 @@
 }
 @media (max-width: 767px) {
   #objectives .objective-content {
-    background-position: bottom;
+    background-position: center bottom !important;
     background-image: url(../images/home/objectives/line-2.svg);
     background-size: 50%;
   }
@@ -48,6 +48,10 @@
   }
   #polarize-startups .number {
     margin: auto;
+    margin-top: -3rem !important;
+    width: 65px !important;
+    height: 65px !important;
+    min-width: 65px !important;
   }
   #join .join-content {
     flex-direction: column;
