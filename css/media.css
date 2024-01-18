@@ -6,6 +6,12 @@
   #objectives .objective-content:nth-of-type(2) {
     background-image: none;
   }
+  #hero-section {
+    min-height: 70vh !important;
+  }
+  #vision-mission {
+    padding-top: 3rem !important;
+  }
 }
 @media (min-width: 768px) {
 }
@@ -20,6 +26,35 @@
   }
 }
 @media (max-width: 565px) {
+  .w-75 {
+    width: 100% !important;
+  }
+  #polarize-startups .startups-content {
+    border: 0;
+    margin: 0;
+    padding: inherit;
+  }
+  #polarize-startups .startup-content {
+    border: 2px solid #60efff24;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #0a1720;
+    display: block !important;
+  }
+  #polarize-startups .number {
+    margin: auto;
+  }
+  #join .join-content {
+    flex-direction: column;
+    border-radius: 10px !important;
+    gap: 8px !important;
+  }
+  #join .number {
+    margin-top: -2rem;
+  }
+  #join p {
+    text-align: center;
+  }
 }
 @media (max-width: 465px) {
 }
