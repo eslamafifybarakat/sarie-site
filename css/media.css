@@ -7,7 +7,9 @@
     background-image: none;
   }
   #hero-section {
-    min-height: 70vh !important;
+    min-height: auto !important;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
   }
   #vision-mission {
     padding-top: 3rem !important;
