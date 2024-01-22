@@ -205,9 +205,10 @@ a {
 }
 .btn-solid-main,
 .btn-solid-main:hover,
+.btn-solid-main:active,
 .btn-solid-main:focus {
   min-width: 7rem;
-  color: var(--text-white-color);
+  color: var(--text-white-color) !important;
   /* background-color: var(--bg-secondary-color); */
   background: linear-gradient(
     89.8deg,
@@ -215,7 +216,7 @@ a {
     #d106ff 100.01%
   );
 
-  border-color: var(--bg-main-color);
+  border: 0 !important;
   border-radius: 0.5rem;
   padding: 0.65rem 1.25rem;
   font-size: 1rem;
