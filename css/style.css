@@ -43,7 +43,7 @@
     #d106ff 100.01%
   );
   border: 0;
-  color: var(--text-white-color);
+  color: var(--text-white-color) !important;
 }
 .search-group .form-control,
 .search-group .input-group-text {

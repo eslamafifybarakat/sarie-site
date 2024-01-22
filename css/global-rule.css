@@ -207,6 +207,10 @@ a.text-main-color:focus {
 .navbar-toggler:focus {
   box-shadow: none;
 }
+a.btn-solid-main,
+a.btn-solid-main:hover,
+a.btn-solid-main:active,
+a.btn-solid-main:focus,
 .btn-solid-main,
 .btn-solid-main:hover,
 .btn-solid-main:active,
@@ -218,7 +222,6 @@ a.text-main-color:focus {
     rgba(56, 148, 255, 0.51) 27.2%,
     #d106ff 100.01%
   );
-
   border: 0 !important;
   border-radius: 0.5rem;
   padding: 0.65rem 1.25rem;
