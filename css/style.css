@@ -37,7 +37,12 @@
 .login-btn:hover,
 .login-btn:focus,
 .login-btn:active {
-  background-color: #9961c5;
+  background: linear-gradient(
+    89.8deg,
+    rgba(56, 148, 255, 0.51) 27.2%,
+    #d106ff 100.01%
+  );
+  border: 0;
   color: var(--text-white-color);
 }
 .search-group .form-control,
