@@ -43,3 +43,6 @@ a:focus {
     margin: 0 !important;
   }
 }
+.auth-bg {
+  background-image: url("../images/auth/auth-bg-rtl.png");
+}
