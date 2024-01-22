@@ -316,3 +316,24 @@
   z-index: 33333;
   background-color: #10394b !important;
 }
+/* ----------------------contact----------------------- */
+#contact-us-page {
+  padding-top: 6.3rem;
+}
+#contact-us-page .global-card {
+  border: 2px solid #60efff24;
+  background-color: #0a1720;
+}
+#contact-us-page .map {
+  border-radius: 15px;
+}
+#contact-us-page .contact-info {
+  background-color: #272b3071 !important ;
+  border: 1px solid #272b30 !important ;
+  border-radius: 10px;
+}
+#contact-us-page .contact-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: #c3c3c326;
+}

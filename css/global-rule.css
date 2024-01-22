@@ -185,9 +185,19 @@ a {
 }
 .global-card {
   padding: 1rem;
-  box-shadow: 0px 4px 30px rgba(213, 215, 216, 0.47);
+  /* box-shadow: 0px 4px 30px rgba(213, 215, 216, 0.47); */
   border-radius: 15px;
   background-color: var(--bg-white-color);
+}
+.dropdown-menu li {
+  /* margin: 0 10px; */
+  border-radius: 5px;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+  border-radius: 5px;
+  background-color: #9961c51c;
+  color: var(--text-main-color);
 }
 /* ================== */
 .navbar-toggler:focus {
@@ -198,7 +208,7 @@ a {
 .btn-solid-main:focus {
   min-width: 7rem;
   color: var(--text-white-color);
-  background-color: var(--bg-main-color);
+  background-color: var(--bg-secondary-color);
   border-color: var(--bg-main-color);
   border-radius: 0.5rem;
   padding: 0.65rem 1.25rem;
@@ -212,4 +222,25 @@ a.text-white-color:hover {
   height: 1.5rem;
   border-radius: 2px;
   object-fit: cover;
+}
+/* ==================forms================= */
+.form-control {
+  background-color: #272b3071 !important ;
+  border-color: #272b30 !important ;
+  height: 3.4rem !important;
+  border-radius: 10px !important;
+}
+.form-label {
+  font-weight: bold;
+  color: var(--text-white-color);
+}
+.form-check-input:focus {
+  box-shadow: none !important;
+}
+.form-check-input {
+  width: 1.2rem !important;
+  height: 1.2rem !important;
+}
+textarea.form-control {
+  min-height: 9rem;
 }

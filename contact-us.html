@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sarie</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.svg">
+    <!-- Base & Vendors
+        ========================== -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <!-- Site Style
+        ========================== -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global-rule.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg p-0 bg-transparent px-sm-0 px-3 position-fixed w-100" id="navbar">
+        <div class="container h-100 p-0 d-flex flex-nowrap align-items-center" id="nav-content">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo/logo.svg" alt="logo">
+            </a>
+            <div class="d-flex navbar-collapse justify-content-between" id="">
+                <ul class="navbar-nav mt-0 mb-lg-0 gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active d-flex align-items-center gap-2" aria-current="page"
+                            href="./index.html">
+                            <img src="./images/icons/home.svg" width="22px" alt="home">
+                            <span class="d-none d-sm-inline">Home</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex gap-sm-3 gap-1 align-items-center mt-lg-0">
+                    <a id="search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-search text-white-color" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </a>
+
+                    <div class="dropdown">
+                        <a class="dropdown-toggle fw-bold fs-6 text-white-color" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            EN
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow mt-4 p-3">
+                            <li class="mb-2"><a class="dropdown-item fs-6-1 d-flex align-items-center gap-2 rounded"
+                                    href="./contact-us-ar.html">
+                                    <img src="images/flags/sa.svg" class="flag shadow-sm" alt="sa">
+                                    عربي</a></li>
+                            <li class=""><a class="dropdown-item fs-6-1 d-flex align-items-center gap-2 rounded"
+                                    href="./contact-us.html">
+                                    <img src="images/flags/us.svg" class="flag shadow-sm" alt="en">
+                                    English</a></li>
+                        </ul>
+                    </div>
+                    <button class="btn login-btn px-3">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- ============end navbar============ -->
+    <section id="contact-us-page">
+        <div class="second-contact-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="global-card p-4">
+                            <strong class="fs-6 text-secondary-color"> Get in Touch</strong>
+                            <h2 class="mt-2 fw-bold text-white-color">Let's Chat, Reach Out to Us</h2>
+                            <p class="text-muted fs-6 mt-2">
+                                We are here for business so tell us what you need to grow. Add as much detail as you
+                                can, so we can understand and find your ideal solution together
+                            </p>
+                            <hr class="hr my-4">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" id="firstName" class="form-control" placeholder="First Name">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" id="lastName" class="form-control" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" id="email" class="form-control" placeholder="Email Address">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea id="message" class="form-control"
+                                        placeholder="Leave us message"></textarea>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <input class="form-check-input m-0" type="checkbox" value="" id="privacy">
+                                    <label for="privacy" class="form-label m-0">I agree to our friendly <u>privacy
+                                            policy</u>
+                                    </label>
+                                </div>
+                                <div class="mt-4">
+                                    <button class="btn btn-solid-main w-100">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-lg-0 mt-4">
+                        <iframe class="map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237684.5851799636!2d39.681729807977746!3d21.436254373509826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b4ced818775%3A0x98ab2469cf70c9ce!2sMecca%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1704043106831!5m2!1sen!2seg"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="filter: invert(90%)"
+                            width="100%" height="370" frameborder="0" style="border:0;" allowfullscreen="" class="map"
+                            aria-hidden="false" tabindex="0"></iframe>
+                        <div class="global-card mt-4">
+                            <div class="contact-info p-3 d-flex align-items-center gap-3 mb-3">
+                                <div
+                                    class="contact-icon d-flex justify-content-center align-items-center rounded-circle">
+                                    <i class="fas fa-envelope fs-5-2 text-white-color"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fs-6 fw-bold text-white-color">Email</h5>
+                                    <p class="text-muted m-0 fs-6 mt-1">Info@wakeb.tech</p>
+                                </div>
+                            </div>
+                            <div class="contact-info p-3 d-flex align-items-center gap-3 mb-3">
+                                <div
+                                    class="contact-icon d-flex justify-content-center align-items-center rounded-circle">
+                                    <i class="fas fa-phone fs-5-2 text-white-color"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fs-6 fw-bold text-white-color">Phone Number</h5>
+                                    <p class="text-muted m-0 fs-6 mt-1">(+966) 920035445</p>
+                                </div>
+                            </div>
+                            <div class="contact-info p-3 d-flex align-items-center gap-3">
+                                <div
+                                    class="contact-icon d-flex justify-content-center align-items-center rounded-circle">
+                                    <i class="fas fa-location-arrow fs-5-2 text-white-color"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fs-6 fw-bold text-white-color">Address</h5>
+                                    <p class="text-muted m-0 fs-6 mt-1">
+                                        St. 13321 King Abdulaziz, Riyadh, Saudi Arabia
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="mt-4">
+        <div class="container">
+            <div class="py-4">
+                <div class="d-flex justify-content-center">
+                    <img src="./images/logo/logo.svg" class="logo" alt="white-logo">
+                </div>
+                <!-- <p class="mt-2 footer-email text-center fs-5-2 italic">
+                    Email: <u class="footer-email-link"><a href="mailto: sarie@wakeb.tech">sarie@wakeb.tech</a></u>
+                </p> -->
+                <div class="d-flex align-items-center justify-content-center gap-3 my-4">
+                    <a href="twitterLink" target="_blank">
+                        <img src="./images/icons/twitter.svg" alt="twitter">
+                    </a>
+                    <a href="linked-in" target="_blank">
+                        <img src="./images/icons/linked-in.svg" alt="linked-in">
+                    </a>
+                    <a href="mailto: sarie@wakeb.tech">
+                        <img src="./images/icons/email.svg" alt="email">
+                    </a>
+                </div>
+                <hr class="hr">
+                <div class="mt-4">
+                    <p class="text-white-color footer-email text-center">
+                        Copyright and rights are vreserved © sarie
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="buttonUp bttn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up-short"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+        </svg>
+    </button>
+</body>
+<script src="js/jquary.js"></script>
+<script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
