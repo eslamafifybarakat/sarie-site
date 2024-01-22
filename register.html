@@ -42,16 +42,22 @@
                 </p>
             </div>
         </div>
-        <div class="col-lg-6 p-5 auth-form d-flex align-items-center">
+        <div class="col-lg-6 px-5 py-4 auth-form d-flex align-items-center">
             <div class="px-sm-5 px-4 w-100">
                 <a class="navbar-brand d-lg-none d-flex mb-2 justify-content-center" href="index.html">
                     <img src="images/logo/logo.svg" alt="logo">
                 </a>
                 <h4 class="text-white-color">Let's get started...</h4>
                 <p class="text-gray500 mt-2 fs-5-1">
-                    Log in, it will enable you to get all the features.
+                    Sign up, it will enable you to get all the features.
                 </p>
                 <form class="mt-5">
+                    <div class="mb-4">
+                        <label for="name" class="form-label">
+                            Full Name
+                        </label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your full name">
+                    </div>
                     <div class="mb-4">
                         <label for="email" class="form-label">
                             Email Address
@@ -59,12 +65,9 @@
                         <input type="email" id="email" class="form-control" placeholder="Enter your mail">
                     </div>
                     <div class="mb-5">
-                        <div class="d-flex align-items-center justify-content-between mb-1">
-                            <label for="password" class="form-label">
-                                Password
-                            </label>
-                            <a class="forget-password">Forget Password?</a>
-                        </div>
+                        <label for="password" class="form-label">
+                            Password
+                        </label>
                         <input type="password" id="password" class="form-control" placeholder="Enter password">
                         <p class="text-gray500 mt-2">
                             Min. 8 character
@@ -77,11 +80,10 @@
                         </label>
                     </div>
                     <div class="mt-4">
-                        <button class="btn btn-solid-main w-100">Login</button>
+                        <button class="btn btn-solid-main w-100">Sign Up</button>
                     </div>
                     <p class="text-gray500 mt-3 d-flex justify-content-center gap-1">
-                        <span>Don’t have an account?</span> <a class="forget-password" href="./register.html">Sign
-                            Up</a>
+                        <span>Already have an Account?</span> <a href="./login.html" class="forget-password">Sign in</a>
                     </p>
                 </form>
             </div>

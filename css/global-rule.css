@@ -235,6 +235,7 @@ a.text-white-color:hover {
   border-color: #272b30 !important ;
   height: 3.4rem !important;
   border-radius: 10px !important;
+  color: #e4e9ef !important;
 }
 .form-label {
   font-weight: 500;

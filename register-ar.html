@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sarie</title>
+    <title>سارع</title>
     <link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.svg">
     <!-- Base & Vendors
         ========================== -->
@@ -19,74 +19,80 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/style-rtl.css">
 </head>
 
 <body>
     <section class="row min-vh-100 g-0" id="auth">
         <div class="col-lg-6 d-lg-block d-none">
             <div class="auth-bg d-flex justify-content-between flex-column align-items-center py-4">
-                <a class="navbar-brand mt-5" href="index.html">
+                <a class="navbar-brand mt-5" href="index-ar.html">
                     <img src="images/logo/logo.svg" alt="logo">
                 </a>
                 <div>
                     <h1 class="text-white-color text-center">
-                        WAKEB inspire innovators.
+                        وايكب يلهم المبتكرين.
                     </h1>
                     <p class="text-gray500 text-center mt-2 fs-5-2 w-75 m-auto">
-                        Chat with the smartest AI
-                        Experience the power of AI with us
+                        دردش مع أذكى الذكاء الاصطناعي
+                        ّاختبر قوة الذكاء الاصطناعي معنا
                     </p>
                 </div>
                 <p class="text-gray500 text-center">
-                    @2023 sarie All Right Reserved.
+                    @ 2023 ساري جميع الحقوق محفوظة.
                 </p>
             </div>
         </div>
-        <div class="col-lg-6 p-5 auth-form d-flex align-items-center">
+        <div class="col-lg-6 px-5 py-4 auth-form d-flex align-items-center">
             <div class="px-sm-5 px-4 w-100">
-                <a class="navbar-brand d-lg-none d-flex mb-2 justify-content-center" href="index.html">
+                <a class="navbar-brand d-lg-none d-flex mb-2 justify-content-center" href="index-ar.html">
                     <img src="images/logo/logo.svg" alt="logo">
                 </a>
-                <h4 class="text-white-color">Let's get started...</h4>
+                <h4 class="text-white-color">لنبدأ...</h4>
                 <p class="text-gray500 mt-2 fs-5-1">
-                    Log in, it will enable you to get all the features.
+                    قم بالتسجيل، سيمكنك الوصول إلى جميع الميزات.
                 </p>
                 <form class="mt-5">
                     <div class="mb-4">
-                        <label for="email" class="form-label">
-                            Email Address
+                        <label for="name" class="form-label">
+                            الاسم الكامل
                         </label>
-                        <input type="email" id="email" class="form-control" placeholder="Enter your mail">
+                        <input type="text" id="name" class="form-control" placeholder="أدخل اسمك الكامل">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="form-label">
+                            عنوان البريد الإلكتروني
+                        </label>
+                        <input type="email" id="email" class="form-control" placeholder="أدخل بريدك الإلكتروني">
                     </div>
                     <div class="mb-5">
-                        <div class="d-flex align-items-center justify-content-between mb-1">
-                            <label for="password" class="form-label">
-                                Password
-                            </label>
-                            <a class="forget-password">Forget Password?</a>
-                        </div>
-                        <input type="password" id="password" class="form-control" placeholder="Enter password">
+                        <label for="password" class="form-label">
+                            كلمة المرور
+                        </label>
+                        <input type="password" id="password" class="form-control" placeholder="أدخل كلمة المرور">
                         <p class="text-gray500 mt-2">
-                            Min. 8 character
+                            الحد الأدنى 8 أحرف
                         </p>
                     </div>
                     <div class="d-flex align-items-center gap-2">
                         <input class="form-check-input m-0" type="checkbox" value="" id="privacy">
-                        <label for="privacy" class="form-label m-0">I agree to the<a class="forget-password"> privacy
-                                policy</a>
+                        <label for="privacy" class="form-label m-0">أوافق على <a class="forget-password">سياسة
+                                الخصوصية</a>
                         </label>
                     </div>
                     <div class="mt-4">
-                        <button class="btn btn-solid-main w-100">Login</button>
+                        <button class="btn btn-solid-main w-100">التسجيل</button>
                     </div>
                     <p class="text-gray500 mt-3 d-flex justify-content-center gap-1">
-                        <span>Don’t have an account?</span> <a class="forget-password" href="./register.html">Sign
-                            Up</a>
+                        <span>لديك حساب بالفعل؟</span> <a href="./login-ar.html" class="forget-password">تسجيل
+                            الدخول</a>
                     </p>
                 </form>
             </div>
         </div>
+
     </section>
+
 </body>
 <script src="js/jquary.js"></script>
 <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
