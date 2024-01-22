@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Sarie</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.svg">
     <!-- Base & Vendors
         ========================== -->
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -25,7 +25,7 @@
     <nav class="navbar navbar-expand-lg p-0 bg-transparent px-sm-0 px-3 position-fixed w-100" id="navbar">
         <div class="container h-100 p-0 d-flex flex-nowrap align-items-center" id="nav-content">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo/logo.png" alt="logo">
+                <img src="images/logo/logo.svg" alt="logo">
             </a>
             <div class="d-flex navbar-collapse justify-content-between" id="">
                 <ul class="navbar-nav mt-0 mb-lg-0 gap-3">
@@ -44,21 +44,26 @@
                                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                         </svg>
                     </a>
-                    <a class="fw-bold fs-5-2 text-white-color" href="./index-ar.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="30"
-                            height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M4 5h7" />
-                            <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
-                            <path d="M5 9c0 2.144 2.952 3.908 6.7 4" />
-                            <path d="M12 20l4 -9l4 9" />
-                            <path d="M19.1 18h-6.2" />
-                        </svg>
-                        <span>
-                            عربي
-                        </span>
-                    </a>
+
+                    <div class="dropdown">
+                        <a class="dropdown-toggle fw-bold fs-6 text-white-color" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            EN
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow mt-4 p-3">
+                            <li class="mb-2"><a class="dropdown-item fs-6-1 d-flex align-items-center gap-2 rounded"
+                                    href="./index-ar.html">
+                                    <img src="images/flags/sa.svg" class="flag shadow-sm" alt="sa">
+                                    عربي</a></li>
+                            <li class=""><a class="dropdown-item fs-6-1 d-flex align-items-center gap-2 rounded"
+                                    href="./index.html">
+                                    <img src="images/flags/us.svg" class="flag shadow-sm" alt="en">
+                                    English</a></li>
+                        </ul>
+                    </div>
+                    <button class="btn login-btn px-3">
+                        Login
+                    </button>
                 </div>
             </div>
         </div>
@@ -69,9 +74,15 @@
     <section id="hero-section" class="d-flex justify-content-center align-items-center">
         <div class="container">
             <h1 class="text-white-color fw-bold title text-center">SARIE</h1>
-            <p class="text-white-color text-center text-gray600 fs-6">Accelerate innovative solution to move your
-                business
-                forward</p>
+            <p class="text-white-color text-center text-gray600 fs-6">
+                WAKEB as a regional AI leader take it role to accelerate creative AI startups
+            </p>
+            <p class="text-white-color text-center text-gray600 fs-6">
+                WAKEB create new era in AI technology development.
+            </p>
+            <p class="text-white-color text-center text-gray600 fs-6">
+                WAKEB inspire innovators.
+            </p>
             <div class="row justify-content-center m-0">
                 <div class="col-xl-4 col-lg-5">
                     <div class="d-flex justify-content-center gap-3 text-white-color mt-5">
@@ -97,10 +108,9 @@
                             </h2>
                         </div>
                         <p class="text-gray500 fs-6 w-75 text-center">
-                            The “Sarie” accelerator representing a pioneering vision
-                            of advancing
-                            artificial intelligence in the
-                            kingdom of saudi arabia and the middleeast its primary </p>
+                            Sarie is a program to accelerate the growth of AI startups by providing package of
+                            technology development catalysts.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -126,14 +136,12 @@
                                     </h4>
                                 </div>
                                 <p class="text-gray500 fs-5-2 mt-2">
-                                    developing the top AI accelerator in Saudi Arabia
-                                    building
-                                    the most successful startups
-                                    with innovative solutions that push economic growth of the kingdom
+                                    Establish leading AI accelerator in the Kingdom of Saudi Arabia, which going to
+                                    create leading AI startups.
                                 </p>
                             </div>
                         </div>
-                        <div class="d-flex gap-3 mt-5">
+                        <!-- <div class="d-flex gap-3 mt-5">
                             <div
                                 class="mission justify-content-center align-items-center rounded-circle d-none d-md-flex">
                                 <img src="./images/home/mission.svg" width="75px" class="mt-3" alt="mission">
@@ -153,7 +161,7 @@
                                     with innovative solutions that push economic growth of the kingdom
                                 </p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -172,12 +180,10 @@
                             <img src="./images/home/objectives/object-1.svg" alt="startups" width="70px">
                         </div>
                         <h6 class="text-uppercase text-center mt-3 start-ups fs-6-1 fw-500">Create Startups</h6>
-                        <p class="text-center text-gray500 mt-1 fs-8 fw-500 lh-sm">Empowered with technology and more
-                            talented
-                            developers,
-                            more
-                            startups
-                            will follow</p>
+                        <p class="text-center text-gray500 mt-1 fs-8 fw-500 lh-sm">
+                            Empower SMB with technology and talented developers, creative startups will be linked and
+                            powered by WAKEB
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-lg-0 mb-4 objective-content px-4 pb-md-0 pb-4">
@@ -185,9 +191,11 @@
                         <div class="d-flex justify-content-center">
                             <img src="./images/home/objectives/object-2.svg" alt="startups" width="70px">
                         </div>
-                        <h6 class="text-uppercase text-center mt-3 network fs-6-1 fw-500">Partners network</h6>
+                        <h6 class="text-uppercase text-center mt-3 network fs-6-1 fw-500">
+                            Expand Innovation EcoSystem
+                        </h6>
                         <p class="text-center text-gray500 mt-1 fs-8 fw-500 lh-sm">
-                            Create a bigger network of business partners
+                            Create a bigger network of business partners in a vibrant innovation eco system.
                         </p>
                     </div>
                 </div>
@@ -196,9 +204,11 @@
                         <div class="d-flex justify-content-center">
                             <img src="./images/home/objectives/object-3.svg" alt="startups" width="70px">
                         </div>
-                        <h6 class="text-uppercase text-center mt-3 capacity fs-6-1 fw-500">building capacity</h6>
+                        <h6 class="text-uppercase text-center mt-3 capacity fs-6-1 fw-500">
+                            Lead AI technologies development
+                        </h6>
                         <p class="text-center text-gray500 mt-1 fs-8 fw-500 lh-sm">
-                            Train more developers on the new technologies
+                            Establish Center of Excellence for AI development towards national goals.
                         </p>
                     </div>
                 </div>
@@ -207,9 +217,12 @@
                         <div class="d-flex justify-content-center">
                             <img src="./images/home/objectives/object-4.svg" alt="startups" width="70px">
                         </div>
-                        <h6 class="text-uppercase text-center mt-3 market fs-6-1 fw-500">lead market</h6>
+                        <h6 class="text-uppercase text-center mt-3 market fs-6-1 fw-500">
+                            Re-define AI innovation
+                        </h6>
                         <p class="text-center text-gray500 mt-1 fs-8 fw-500 lh-sm">
-                            Lead ai development towards national goals
+                            Maximize and broaden the usage of WAKEB’s well-established short path from ideation to
+                            product-market-fit nationally using ultimate acceleration approach.
                         </p>
                     </div>
                 </div>
@@ -220,9 +233,9 @@
     <section id="benefits" class="py-lg-5 py-4">
         <div class="container">
             <h2 class="text-white-color header-title pb-1">
-                Benefits
+                Sarie Program
             </h2>
-            <div class="row mt-4 benefits-info gx-lg-5 gx-3 mx-0">
+            <div class="row mt-4 benefits-info gx-lg-5 gx-3">
                 <div class="col-md-6 mb-md-0 mb-4">
                     <div
                         class="benefit-content d-flex justify-content-between align-items-center gap-2 flex-wrap flex-sm-nowrap h-100">
@@ -235,7 +248,8 @@
                                     alt="benefit">
                             </div>
                             <p class="text-gray500 mt-1 fs-5-2">
-                                cloud computing credit
+                                WAKEB cloud post AI development towards rapid exploration and prototyping and large
+                                scale product development and qualification.
                             </p>
                         </div>
                         <img src="./images/home/benefits/benefit-1.png" class="d-none d-sm-block" width="90px"
@@ -248,13 +262,14 @@
                         <div class="w-100">
                             <div class="d-flex justify-content-between align-items-center gap-2">
                                 <h4 class="text-white-color text-uppercase fs-4-1 mb-0">
-                                    Technology acceleration
+                                    Technology Acceleration
                                 </h4>
                                 <img src="./images/home/benefits/benefit-2.png" width="50px" class="d-block d-sm-none"
                                     alt="benefit">
                             </div>
                             <p class="text-gray500 mt-1 fs-5-2">
-                                AI,SW and systems condultation and co-development
+                                AI, Software development, software engineering, architecture and integration,
+                                consultation and co-development
                             </p>
                         </div>
                         <img src="./images/home/benefits/benefit-2.png" width="90px" alt="benefit"
@@ -269,13 +284,13 @@
                         <div class="w-100">
                             <div class="d-flex justify-content-between align-items-center gap-2">
                                 <h4 class="text-white-color text-uppercase fs-4-1 mb-0">
-                                    training and montoring
+                                    Training and mentoring
                                 </h4>
                                 <img src="./images/home/benefits/benefit-3.png" width="50px" class="d-block d-sm-none"
                                     alt="benefit">
                             </div>
                             <p class="text-gray500 mt-1 fs-5-2">
-                                awareness and e-learning courser
+                                Talent development, awareness and E-learning courses
                             </p>
                         </div>
                         <img src="./images/home/benefits/benefit-3.png" width="90px" alt="benefit"
@@ -288,7 +303,7 @@
                         <div class="w-100">
                             <div class="d-flex justify-content-between align-items-center gap-2">
                                 <h4 class="text-white-color text-uppercase fs-4-1 mb-0">
-                                    Tech Support
+                                    Technical Support
                                 </h4>
                                 <img src="./images/home/benefits/benefit-4.png" width="50px" class="d-block d-sm-none"
                                     alt="benefit">
@@ -296,7 +311,7 @@
                             <h4 class="text-white-color text-uppercase fs-4-1">
                             </h4>
                             <p class="text-gray500 mt-1 fs-5-2">
-                                Wakeb team support
+                                Wakeb team support, Go=Live support and UIUX support
                             </p>
                         </div>
                         <img src="./images/home/benefits/benefit-4.png" width="90px" alt="benefit"
@@ -307,7 +322,148 @@
         </div>
     </section>
 
-    <section id="polarize-startups" class="py-lg-5 py-4">
+    <section id="sarie-target" class="pt-lg-5 pt-4 ">
+        <div class="container">
+            <h2 class="text-white-color header-title pb-1">
+                Sarie target audience
+            </h2>
+            <div class="row target-info mx-0 gx-lg-5 gx-3">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center text-white-color target-content">
+                        <div class="number number-1 rounded-circle d-flex justify-content-center align-items-center">
+                            <span class="fs-3 fw-bold">
+                                1
+                            </span>
+                        </div>
+                        <div class="text-center w-100 p-3 pb-2">
+                            <h5 class="fs-5-1 ">
+                                Early stage
+                            </h5>
+                            <p class="text-gray500 text-center mt-2">
+                                Entrepreneurs in early stage who started to think about starting a business that is
+                                either AI based or AI enabled.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center text-white-color target-content">
+                        <div class="number number-2 rounded-circle d-flex justify-content-center align-items-center">
+                            <span class="fs-3 fw-bold"> 2</span>
+                        </div>
+                        <div class="text-center w-100 p-3 pb-2">
+                            <h5 class="fs-5-1 ">
+                                MVP Stage
+                            </h5>
+                            <p class="text-gray500 text-center mt-2">
+                                Startups that want to build MVP to validate the business with AI tools or AI enabled
+                                technologies
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center text-white-color target-content">
+                        <div class="number number-3 rounded-circle d-flex justify-content-center align-items-center">
+                            <span class="fs-3 fw-bold">
+                                3
+                            </span>
+                        </div>
+                        <div class="text-center w-100 p-3 pb-2">
+                            <h5 class="fs-5-1">
+                                Growth Stage
+                            </h5>
+                            <p class="text-gray500 text-center mt-2">
+                                AI Startups that reached valid business model and want to grow based on new solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center text-white-color target-content">
+                        <div class="number number-4 rounded-circle d-flex justify-content-center align-items-center">
+                            <span class="fs-3 fw-bold">
+                                4
+                            </span>
+                        </div>
+                        <div class="text-center w-100 p-3 pb-2">
+                            <h5 class="fs-5-1">
+                                Spin-off
+                            </h5>
+                            <p class="text-gray500 text-center mt-2">
+                                Existing company that have a new idea and want to create a spin-off based on Wakeb
+                                existing technologies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="what-startups" class="pt-4">
+        <div class="container">
+            <h2 class="text-white-color header-title pb-1">
+                What is in it for startups ?
+            </h2>
+            <div class="row target-info mx-0 gx-lg-5 gx-3 mt-5">
+                <div class="col-lg-6 mb-5">
+                    <div class="d-flex align-items-center text-white-color target-content">
+                        <div class="number number-1 rounded-circle d-flex justify-content-center align-items-center">
+                            <span class="fs-3 fw-bold">
+                                1
+                            </span>
+                        </div>
+                        <div class="w-100 p-3 pb-2">
+                            <h5 class="fs-5-1 ">
+                                Tools For Startups
+                            </h5>
+                            <p class="text-gray500 mt-2">
+                                Sarie collection of AI tools is offered for a one-year period of time to Accelerator
+                                startups.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="d-flex align-items-center text-white-color target-content">
+                        <div class="number number-2 rounded-circle d-flex justify-content-center align-items-center">
+                            <span class="fs-3 fw-bold"> 2</span>
+                        </div>
+                        <div class="w-100 p-3 pb-2">
+                            <h5 class="fs-5-1">
+                                Technology Acceleration
+                            </h5>
+                            <p class="text-gray500 mt-2">
+                                WAKEB’s Innovation and Development will help startups in technology development through
+                                the journey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center text-white-color target-content">
+                        <div class="number number-3 rounded-circle d-flex justify-content-center align-items-center">
+                            <span class="fs-3 fw-bold">
+                                3
+                            </span>
+                        </div>
+                        <div class="w-100 p-3 pb-2">
+                            <h5 class="fs-5-1">
+                                Technical Support
+                            </h5>
+                            <p class="text-gray500 mt-2">
+                                Sarie team will help the startup teams to build their solutions using state of the art
+                                technology .
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="polarize-startups" class="py-lg-5 py-4 d-none">
         <div class="container">
             <h2 class="text-white-color header-title pb-1">
                 How to polarize startups
@@ -362,7 +518,7 @@
             </h2>
             <div class="row mt-5 join-info gx-lg-5">
                 <div class="col-lg-6 mb-5">
-                    <div class="join-content join-content-1 rounded-pill d-flex align-items-center gap-3">
+                    <div class="join-content join-content-1 rounded-pill d-flex align-items-center gap-2">
                         <div
                             class="number rounded-circle d-flex justify-content-center align-items-center bg-white-color">
                             <span class="fs-4 fw-bold">
@@ -370,13 +526,13 @@
                             </span>
                         </div>
                         <p class="text-white-color fs-8">
-                            Developing an AI based startup that can solve a real market
-                            problem and transform the industry 
+                            Do you developing an AI based startup that can solve a real market problem and transform the
+                            industry?
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-6 mb-5">
-                    <div class="join-content join-content-2 rounded-pill d-flex align-items-center gap-3">
+                    <div class="join-content join-content-2 rounded-pill d-flex align-items-center gap-2">
                         <div
                             class="number rounded-circle d-flex justify-content-center align-items-center bg-white-color">
                             <span class="fs-4 fw-bold">
@@ -384,13 +540,12 @@
                             </span>
                         </div>
                         <p class="text-white-color fs-8">
-                            You are between (MVP/prototype) stage  and seed stage and looking forward to grow the
-                            business further 
+                            Do you have a idea, design, prototype or MVP and straggle with technology development?
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-6 mb-lg-0 mb-5">
-                    <div class="join-content join-content-3 rounded-pill d-flex align-items-center gap-3">
+                    <div class="join-content join-content-3 rounded-pill d-flex align-items-center gap-2">
                         <div
                             class="number rounded-circle d-flex justify-content-center align-items-center bg-white-color">
                             <span class="fs-4 fw-bold">
@@ -398,14 +553,12 @@
                             </span>
                         </div>
                         <p class="text-white-color fs-8">
-                            You would like to grow your customer base and partner with a strong and powerful market
-                            leader in the domain that can fast forward connect you with the high end of potential
-                            customers in KSA and GCC. 
+                            Would you like to post your growth and need technology enhancement and experience?
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="join-content join-content-4 rounded-pill d-flex align-items-center gap-3">
+                    <div class="join-content join-content-4 rounded-pill d-flex align-items-center gap-2">
                         <div
                             class="number rounded-circle d-flex justify-content-center align-items-center bg-white-color">
                             <span class="fs-4 fw-bold">
@@ -413,8 +566,9 @@
                             </span>
                         </div>
                         <p class="text-white-color fs-8">
-                            You already have a complete team that can elevate the business and you are looking to extend
-                            your team with strong technical and marketing professionals from Wakeb. 
+                            Are you looking to grow your customer base and partner with a strong and powerful market
+                            leader in the domain that can fast-forward connect you with the high end of potential
+                            customers in KSA and GCC.
                         </p>
                     </div>
                 </div>
@@ -425,17 +579,20 @@
         <div class="container">
             <div class="py-4">
                 <div class="d-flex justify-content-center">
-                    <img src="./images/logo/logo.png" class="logo" alt="white-logo">
+                    <img src="./images/logo/logo.svg" class="logo" alt="white-logo">
                 </div>
-                <p class="mt-2 footer-email text-center fs-5-2 italic">
+                <!-- <p class="mt-2 footer-email text-center fs-5-2 italic">
                     Email: <u class="footer-email-link"><a href="mailto: sarie@wakeb.tech">sarie@wakeb.tech</a></u>
-                </p>
+                </p> -->
                 <div class="d-flex align-items-center justify-content-center gap-3 my-4">
                     <a href="twitterLink" target="_blank">
                         <img src="./images/icons/twitter.svg" alt="twitter">
                     </a>
                     <a href="linked-in" target="_blank">
                         <img src="./images/icons/linked-in.svg" alt="linked-in">
+                    </a>
+                    <a href="mailto: sarie@wakeb.tech">
+                        <img src="./images/icons/email.svg" alt="email">
                     </a>
                 </div>
                 <hr class="hr">

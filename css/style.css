@@ -26,12 +26,19 @@
   color: #ffffff;
 }
 .navbar .dropdown-menu {
-  right: 0 !important;
-  left: inherit !important;
+  right: 0;
+  left: inherit;
 }
 .navbar-nav .nav-link.active {
   /* color: var(--text-main-color) !important; */
   /* font-weight: bold !important; */
+}
+.login-btn,
+.login-btn:hover,
+.login-btn:focus,
+.login-btn:active {
+  background-color: #9961c5;
+  color: var(--text-white-color);
 }
 .search-group .form-control,
 .search-group .input-group-text {
@@ -124,7 +131,7 @@
   background-image: url(../images/home/tech-icon.svg);
   background-position: right;
   background-repeat: no-repeat;
-  background-size: 25%;
+  background-size: 250px;
 }
 #vision-mission .vision,
 #vision-mission .mission {
@@ -206,6 +213,44 @@
 }
 .number-3 {
   background-color: #c579be;
+}
+.number-4 {
+  background-color: #6d60fd;
+}
+/* SARIE TARGET AUDIENCE */
+#sarie-target .target-info {
+  margin-top: 4rem;
+}
+#sarie-target .col-lg-6 {
+  margin-bottom: 4rem !important;
+}
+#sarie-target .target-content {
+  border: 2px solid #60efff24;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #0a1720;
+  display: block !important;
+  height: 100%;
+}
+#sarie-target .number {
+  margin: auto;
+  margin-top: -3rem !important;
+  width: 65px !important;
+  height: 65px !important;
+  min-width: 65px !important;
+}
+/* What is in it for startups ? */
+#what-startups .target-content {
+  border: 2px solid #60efff24;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #0a1720;
+  height: 100%;
+}
+#what-startups .number {
+  width: 65px !important;
+  height: 65px !important;
+  min-width: 65px !important;
 }
 /* =========join========= */
 #join .join-content {

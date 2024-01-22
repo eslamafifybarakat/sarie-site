@@ -21,6 +21,10 @@ a:focus {
   left: 30px !important;
   right: inherit !important;
 }
+.navbar .dropdown-menu {
+  right: inherit !important;
+  left: 0 !important;
+}
 #vision-mission {
   background-image: url(../images/home/tech-icon-rtl.svg) !important;
   background-position: left;
