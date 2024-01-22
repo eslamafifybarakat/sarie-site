@@ -237,8 +237,8 @@ a.text-white-color:hover {
   border-radius: 10px !important;
 }
 .form-label {
-  font-weight: bold;
-  color: var(--text-white-color);
+  font-weight: 500;
+  color: #e4e9ef;
 }
 .form-check-input:focus {
   box-shadow: none !important;
@@ -246,6 +246,11 @@ a.text-white-color:hover {
 .form-check-input {
   width: 1.2rem !important;
   height: 1.2rem !important;
+  border: 2px solid #334560 !important;
+  background-color: #1c1d28;
+}
+.form-check-input:checked {
+  background-color: #1c1d28;
 }
 textarea.form-control {
   min-height: 9rem;
