@@ -141,15 +141,6 @@ ul {
 .bg-main-color {
   background-color: var(--bg-main-color);
 }
-.text-secondary-color {
-  color: var(--text-secondary-color);
-}
-.bg-secondary-color {
-  background-color: var(--bg-secondary-color);
-}
-.text-second-color {
-  color: var(--text-second-color);
-}
 .text-white-color {
   color: var(--text-white-color);
 }
@@ -183,21 +174,34 @@ ul {
 a {
   cursor: pointer;
 }
+hr {
+  border-color: #b0b0b0;
+}
+a.text-main-color,
+a.text-main-color:hover,
+a.text-main-color:focus {
+  color: var(--text-main-color);
+}
 .global-card {
   padding: 1rem;
-  /* box-shadow: 0px 4px 30px rgba(213, 215, 216, 0.47); */
   border-radius: 15px;
-  background-color: var(--bg-white-color);
+  border: 2px solid #60efff24;
+  background-color: #0a1720;
+}
+.dropdown-menu {
+  padding: 0.8rem !important;
 }
 .dropdown-menu li {
-  /* margin: 0 10px; */
   border-radius: 5px;
+}
+.dropdown-item {
+  padding: 0.5rem;
 }
 .dropdown-item:focus,
 .dropdown-item:hover {
   border-radius: 5px;
   background-color: #9961c51c;
-  color: var(--text-main-color);
+  color: var(--text-main-color) !important;
 }
 /* ================== */
 .navbar-toggler:focus {
@@ -209,7 +213,6 @@ a {
 .btn-solid-main:focus {
   min-width: 7rem;
   color: var(--text-white-color) !important;
-  /* background-color: var(--bg-secondary-color); */
   background: linear-gradient(
     89.8deg,
     rgba(56, 148, 255, 0.51) 27.2%,
@@ -225,10 +228,10 @@ a.text-white-color:hover {
   color: var(--text-white-color) !important;
 }
 .flag {
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 2px;
+  width: 22px;
+  height: 20px;
   object-fit: cover;
+  border-radius: 2px;
 }
 /* ==================forms================= */
 .form-control {

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sarie</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.svg">
+    <!-- Base & Vendors
+        ========================== -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <!-- Site Style
+        ========================== -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global-rule.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg p-0 bg-transparent px-sm-0 px-3 position-fixed w-100" id="navbar">
+        <div class="container h-100 p-0 d-flex flex-nowrap align-items-center" id="nav-content">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo/logo.svg" alt="logo">
+            </a>
+            <div class="d-flex navbar-collapse justify-content-between" id="">
+                <ul class="navbar-nav mt-0 mb-lg-0 gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active d-flex align-items-center gap-2" aria-current="page">
+                            <img src="./images/icons/home.svg" width="22px" alt="home">
+                            <span class="d-none d-sm-inline">Home</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex gap-sm-3 gap-1 align-items-center mt-lg-0">
+                    <a id="search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-search text-white-color" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </a>
+
+                    <div class="dropdown">
+                        <a class="dropdown-toggle fw-bold fs-6 text-white-color" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            EN
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow mt-4 p-2">
+                            <li class=""><a class="dropdown-item fs-6-1 d-flex align-items-center gap-2 rounded"
+                                    href="./index-ar.html">
+                                    <img src="images/flags/sa.svg" class="flag shadow-sm" alt="sa">
+                                    عربي</a></li>
+                            <li class=""><a class="dropdown-item fs-6-1 d-flex align-items-center gap-2 rounded"
+                                    href="./index.html">
+                                    <img src="images/flags/us.svg" class="flag shadow-sm" alt="en">
+                                    English</a></li>
+                        </ul>
+                    </div>
+                    <a class="d-none btn login-btn px-3" href="./login.html">
+                        Login Now
+                    </a>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle fw-bold fs-6 text-white-color" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Ali Mohamed
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow mt-4 p-2">
+                            <li class=""><a href="./profile.html"
+                                    class="dropdown-item fs-6-1 d-flex align-items-center justify-content-between gap-2 rounded">
+                                    <span>Profile</span>
+                                    <i class="fas fa-user"></i>
+                                </a></li>
+                            <hr class="my-1">
+                            <li class="">
+                                <a
+                                    class="dropdown-item fs-6-1 d-flex align-items-center justify-content-between gap-2 rounded">
+                                    <span>Applications</span>
+                                    <i class="fas fa-globe"></i>
+                                </a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="">
+                                <a href="./login.html"
+                                    class="dropdown-item fs-6-1 d-flex align-items-center justify-content-between gap-2 rounded text-danger">
+                                    <span>Logout</span>
+                                    <i class="fas fa-lock"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- ============end navbar============ -->
+
+    <section id="profile" class="pb-4">
+        <div class="container">
+            <h1 class="text-white-color" class="mt-4">Account</h1>
+            <div class="global-card mt-5 p-4">
+                <div class="d-flex align-items-start gap-md-5">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="false">Profile</button>
+                        <button class="nav-link text-nowrap" id="v-pills-password-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-password" type="button" role="tab" aria-controls="v-pills-password"
+                            aria-selected="true">Change Password</button>
+                        <hr>
+                        <a class="nav-link text-danger" href="./login.html">Logout</a>
+                    </div>
+                    <div class="tab-content w-100" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab" tabindex="0">
+                            <h5 class="text-white-color">Edit Profile</h5>
+                            <form class="mt-4">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" id="firstName" class="form-control"
+                                            placeholder="Enter first name">
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" id="lastName" class="form-control"
+                                            placeholder="Enter last name">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="mobileNumber" class="form-label">Mobile Number</label>
+                                        <input type="number" id="mobileNumber" class="form-control"
+                                            placeholder="+ 123 123 123">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end mt-5">
+                                    <button
+                                        class="btn btn-solid-main d-flex justify-content-center align-items-center gap-2">
+                                        Save
+                                        <i class="fas fa-save"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-password" role="tabpanel"
+                            aria-labelledby="v-pills-password-tab" tabindex="0">
+                            <h5 class="text-white-color">Change Password</h5>
+                            <form class="mt-4">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label for="oldPassword" class="form-label">Old Password</label>
+                                        <input type="text" id="oldPassword" class="form-control"
+                                            placeholder="Enter old password">
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label for="newPassword" class="form-label">New Password</label>
+                                        <input type="password" id="newPassword" class="form-control"
+                                            placeholder="Enter new password">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="confirmNewPassword" class="form-label">Confirm New Password</label>
+                                        <input type="password" id="confirmNewPassword" class="form-control"
+                                            placeholder="Enter confirm new password">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end mt-5">
+                                    <button
+                                        class="btn btn-solid-main d-flex justify-content-center align-items-center gap-2">
+                                        Save
+                                        <i class="fas fa-save"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="py-4">
+                <div class="d-flex justify-content-center">
+                    <img src="./images/logo/logo.svg" class="logo" alt="white-logo">
+                </div>
+                <div class="d-flex align-items-center justify-content-center gap-3 my-4">
+                    <a href="twitterLink" target="_blank">
+                        <img src="./images/icons/twitter.svg" alt="twitter">
+                    </a>
+                    <a href="linked-in" target="_blank">
+                        <img src="./images/icons/linked-in.svg" alt="linked-in">
+                    </a>
+                    <a href="mailto: sarie@wakeb.tech">
+                        <img src="./images/icons/email.svg" alt="email">
+                    </a>
+                </div>
+                <hr class="hr">
+                <div class="mt-4">
+                    <p class="text-white-color footer-email text-center">
+                        Copyright and rights are reserved © sarie
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="buttonUp bttn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up-short"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+        </svg>
+    </button>
+</body>
+<script src="js/jquary.js"></script>
+<script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
