@@ -23,7 +23,99 @@
 </head>
 
 <body>
-
+    <nav class="navbar navbar-expand-lg p-0 bg-transparent px-sm-0 px-3 position-fixed w-100" id="navbar">
+        <div class="container h-100 p-0 d-flex flex-nowrap align-items-center" id="nav-content">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo/logo.svg" alt="logo">
+            </a>
+            <div class="d-flex navbar-collapse justify-content-between" id="">
+                <ul class="navbar-nav mt-0 mb-lg-0 gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active d-flex align-items-center gap-2" aria-current="page"
+                            href="./index-ar.html">
+                            <img src="./images/icons/home.svg" width="22px" alt="home">
+                            <span class="d-none d-sm-inline">
+                                الرئيسية
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex gap-sm-3 gap-1 align-items-center mt-lg-0">
+                    <a id="search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-search text-white-color" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </a>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle fw-bold fs-6 text-white-color" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            عربي
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow mt-4 p-2">
+                            <li class=""><a class="dropdown-item fs-6-1 d-flex align-items-center gap-2 rounded"
+                                    href="./login-ar.html">
+                                    <img src="images/flags/sa.svg" class="flag shadow-sm" alt="sa">
+                                    عربي</a></li>
+                            <li class=""><a class="dropdown-item fs-6-1 d-flex align-items-center gap-2 rounded"
+                                    href="./login.html">
+                                    <img src="images/flags/us.svg" class="flag shadow-sm" alt="en">
+                                    English</a></li>
+                        </ul>
+                    </div>
+                    <span class="d-none">
+                        <a class="btn login-btn px-3 d-sm-block d-none" href="./login-ar.html">
+                            تسجيل الدخول
+                        </a>
+                        <a href="./login-ar.html" class="d-sm-none d-block">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-login scaleX-rtl" width="27" height="27"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M15 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                                <path d="M21 12h-13l3 -3" />
+                                <path d="M11 15l-3 -3" />
+                            </svg>
+                        </a>
+                    </span>
+                    <div class="dropdown d-none">
+                        <a class="dropdown-toggle fw-bold fs-6 text-white-color" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Yasser
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow mt-4 p-2">
+                            <li class="">
+                                <a href="./profile-ar.html"
+                                    class="dropdown-item fs-6-1 d-flex align-items-center justify-content-between gap-2 rounded">
+                                    <span>الملف الشخصي</span>
+                                    <i class="fas fa-user"></i>
+                                </a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="">
+                                <a
+                                    class="dropdown-item fs-6-1 d-flex align-items-center justify-content-between gap-2 rounded">
+                                    <span>التطبيقات</span>
+                                    <i class="fas fa-globe"></i>
+                                </a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="">
+                                <a href="./login-ar.html"
+                                    class="dropdown-item fs-6-1 d-flex align-items-center justify-content-between gap-2 rounded text-danger">
+                                    <span>تسجيل الخروج</span>
+                                    <i class="fas fa-lock"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     <section class="min-vh-100 auth-bg d-none" id="loading-overlay">
         <div class="container">
             <div class="d-flex justify-content-between flex-column align-items-center py-4 min-vh-100">
@@ -67,8 +159,7 @@
     <section class="row min-vh-100 g-0" id="auth">
         <div class="col-lg-6 d-lg-block d-none">
             <div class="auth-bg d-flex justify-content-between flex-column align-items-center py-4">
-                <a class="navbar-brand mt-5" href="index-ar.html">
-                    <img src="images/logo/logo.svg" alt="logo">
+                <a class="navbar-brand mt-5">
                 </a>
                 <div>
                     <h1 class="text-white-color text-center">
@@ -86,9 +177,6 @@
         </div>
         <div class="col-lg-6 p-sm-5 p-4 auth-form d-flex align-items-center">
             <div class="px-sm-5 px-4 w-100 global-card py-4">
-                <a class="navbar-brand d-lg-none d-flex mb-2 justify-content-center" href="index-ar.html">
-                    <img src="images/logo/logo.svg" alt="logo">
-                </a>
                 <h4 class="text-white-color">لنبدأ...</h4>
                 <p class="text-gray500 mt-2 fs-5-1">
                     قم بتسجيل الدخول، سيتيح لك الوصول إلى جميع الميزات.

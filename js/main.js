@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function handleScroll() {
     const scrollPosition = window.scrollY;
 
-    if (scrollPosition > 50) {
+    if (scrollPosition > 30) {
       navbar.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');

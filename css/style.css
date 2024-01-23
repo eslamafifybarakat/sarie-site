@@ -362,9 +362,13 @@
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  position: fixed;
+  width: 50%;
 }
 #auth .auth-form {
   background-color: #000b1c;
+  padding-top: 5.5rem !important;
+  padding-bottom: 1rem !important;
 }
 /* ===============loading================= */
 .lds-default {
@@ -455,4 +459,5 @@
 #loading-overlay {
   position: fixed;
   inset: 0;
+  z-index: 33;
 }
