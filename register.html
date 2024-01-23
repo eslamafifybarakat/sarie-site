@@ -22,8 +22,60 @@
 </head>
 
 <body>
+    <section class="min-vh-100 auth-bg d-none" id="loading-overlay">
+        <div class="container">
+            <div class="d-flex justify-content-between flex-column align-items-center py-4 min-vh-100">
+                <a class="navbar-brand mt-5" href="index.html">
+                    <img src="images/logo/logo.svg" alt="logo">
+                </a>
+                <div>
+                    <div class="d-flex justify-content-center">
+                        <div class="lds-default">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div id="proceed">
+                        <h1 class="text-white-color text-center fs-lg w-md-100 m-auto">
+                            In the proceed stage
+                        </h1>
+                        <p class="text-gray500 text-center mt-2 w-75 m-auto">
+                            Please wait a moment.
+                        </p>
+                    </div>
+                    <div id="success" class="d-none">
+                        <h1 class="text-white-color text-center fs-lg w-75 w-md-100 m-auto">
+                            Your account has been created successfully
+                        </h1>
+                        <p class="text-gray500 text-center mt-2 w-75 m-auto">
+                            Please check your email address
+                        </p>
+                        <div class="d-flex justify-content-center mt-2">
+                            <a class="btn btn-solid-main w-50 m-auto" href="./login.html">
+                                Back to Login Page
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray500 text-center">
+                    @2023 sarie All Right Reserved.
+                </p>
+            </div>
+
+    </section>
+
     <section class="row min-vh-100 g-0" id="auth">
-        <div class="col-lg-5 d-lg-block d-none">
+        <div class="col-lg-6 d-lg-block d-none">
             <div class="auth-bg d-flex justify-content-between flex-column align-items-center py-4">
                 <a class="navbar-brand mt-5" href="index.html">
                     <img src="images/logo/logo.svg" alt="logo">
@@ -42,8 +94,8 @@
                 </p>
             </div>
         </div>
-        <div class="col-lg-7 px-5 py-4 auth-form d-flex align-items-center">
-            <div class="px-sm-0 px-4 w-75 m-auto">
+        <div class="col-lg-6 px-5 py-4 auth-form d-flex align-items-center">
+            <div class="px-sm-5 px-4 w-100  global-card py-4">
                 <a class="navbar-brand d-lg-none d-flex mb-2 justify-content-center" href="index.html">
                     <img src="images/logo/logo.svg" alt="logo">
                 </a>
@@ -80,7 +132,7 @@
                         </label>
                     </div>
                     <div class="mt-4">
-                        <button class="btn btn-solid-main w-100">Sign Up</button>
+                        <a class="btn btn-solid-main w-100" id="register">Sign Up</a>
                     </div>
                     <p class="text-gray500 mt-3 d-flex justify-content-center gap-1">
                         <span>Already have an Account?</span> <a href="./login.html" class="text-main-color">Sign in</a>
