@@ -460,4 +460,5 @@
   position: fixed;
   inset: 0;
   z-index: 33;
+  width: 100% !important;
 }

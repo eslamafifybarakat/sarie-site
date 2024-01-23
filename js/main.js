@@ -25,16 +25,29 @@ document.addEventListener("DOMContentLoaded", function () {
       window.location.href = 'index.html';
     }, 4000);
   });
+
+
+  document.getElementById('login-ar').addEventListener('click', function () {
+    document.getElementById('loading-overlay').classList.remove('d-none');
+    setTimeout(() => {
+      document.getElementById('success').classList.remove('d-none');
+      document.getElementById('proceed').classList.add('d-none');
+    }, 2500);
+    setTimeout(function () {
+      document.getElementById('loading-overlay').classList.add('d-none');
+      window.location.href = 'index-ar.html';
+    }, 4000);
+  });
+  // ======================
+  document.getElementById('register').addEventListener('click', function () {
+    document.getElementById('loading-overlay').classList.remove('d-none');
+    setTimeout(() => {
+      document.getElementById('success').classList.remove('d-none');
+      document.getElementById('proceed').classList.add('d-none');
+    }, 2500);
+    setTimeout(function () {
+      // document.getElementById('loading-overlay').classList.add('d-none');
+    }, 4000);
+  });
 });
 
-// ======================
-document.getElementById('register').addEventListener('click', function () {
-  document.getElementById('loading-overlay').classList.remove('d-none');
-  setTimeout(() => {
-    document.getElementById('success').classList.remove('d-none');
-    document.getElementById('proceed').classList.add('d-none');
-  }, 2500);
-  setTimeout(function () {
-    // document.getElementById('loading-overlay').classList.add('d-none');
-  }, 4000);
-});
