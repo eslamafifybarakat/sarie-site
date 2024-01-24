@@ -365,6 +365,11 @@
   position: fixed;
   width: 50%;
 }
+.register-stepper {
+  background-image: url("../images/auth/auth-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #auth .auth-form {
   background-color: #000b1c;
   padding-top: 5.5rem !important;
@@ -461,4 +466,56 @@
   inset: 0;
   z-index: 33;
   width: 100% !important;
+}
+/* =============STEPPER============== */
+.stepper {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  position: relative;
+}
+.stepper:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  top: 30%;
+  z-index: 0;
+}
+.step-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 45px;
+  min-width: 45px;
+  height: 45px;
+  min-height: 45px;
+  max-width: 45px;
+  background-color: #000b1c;
+  z-index: 2;
+}
+.step-header {
+  color: #ccc;
+}
+.step.active .step-number {
+  background-color: var(--bg-main-color);
+  color: white;
+}
+.step.active .step-header {
+  color: white;
+}
+.progress {
+  height: 11px;
+  width: 20rem;
+  border-radius: 30px;
+  background-color: #c7cfd62e;
+}
+.progress-bar {
+  background-color: var(--bg-main-color);
 }

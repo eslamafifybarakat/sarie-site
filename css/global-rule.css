@@ -228,6 +228,19 @@ a.btn-solid-main:focus,
   padding: 0.65rem 1.25rem;
   font-size: 1rem;
 }
+
+.btn-outline-main,
+.btn-outline-main:hover,
+.btn-outline-main:active,
+.btn-outline-main:focus {
+  min-width: 7rem;
+  color: var(--text-main-color) !important;
+  background: transparent;
+  border: 1px solid var(--bg-main-color) !important;
+  border-radius: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  font-size: 1rem;
+}
 a.text-white-color:hover {
   color: var(--text-white-color) !important;
 }
@@ -238,12 +251,16 @@ a.text-white-color:hover {
   border-radius: 2px;
 }
 /* ==================forms================= */
-.form-control {
+.form-control,
+.form-select {
   background-color: #272b3071 !important ;
   border-color: #272b30 !important ;
   height: 3.4rem !important;
   border-radius: 10px !important;
   color: #e4e9ef !important;
+}
+.form-select:focus {
+  box-shadow: none;
 }
 .form-label {
   font-weight: 500;
@@ -263,4 +280,15 @@ a.text-white-color:hover {
 }
 textarea.form-control {
   min-height: 9rem;
+}
+.upload-file {
+  min-height: 5rem;
+  border: 1px solid var(--bg-main-color);
+  background-color: #9a61c51a;
+  border-radius: 15px;
+}
+.check-container {
+  border: 1px solid var(--bg-main-color);
+  padding: 0.8rem;
+  border-radius: 8px;
 }

@@ -14,6 +14,12 @@
   #vision-mission {
     padding-top: 1rem !important;
   }
+  .step-header {
+    display: none;
+  }
+  .stepper:after {
+    top: 50%;
+  }
 }
 @media (min-width: 768px) {
 }
@@ -28,6 +34,16 @@
   }
 }
 @media (max-width: 565px) {
+  .stepper {
+    gap: 0;
+  }
+  .step-number {
+    width: 35px;
+    min-width: 35px;
+    height: 35px;
+    min-height: 35px;
+    max-width: 35px;
+  }
   .w-75 {
     width: 100% !important;
   }
@@ -67,7 +83,14 @@
 }
 @media (max-width: 465px) {
 }
-@media (max-width: 350px) {
+@media (max-width: 375px) {
+  .step-number {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    min-height: 30px;
+    max-width: 30px;
+  }
 }
 
 /*# sourceMappingURL=media.css.map */

@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sarie</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.png">
+    <!-- Base & Vendors
+        ========================== -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <!-- Site Style
+        ========================== -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global-rule.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg p-0 bg-transparent px-sm-0 px-3 position-fixed w-100" id="navbar">
+        <div class="container h-100 p-0 d-flex flex-nowrap align-items-center" id="nav-content">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo/logo.svg" alt="logo">
+            </a>
+            <div class="d-flex navbar-collapse justify-content-between">
+                <ul class="navbar-nav mt-0 mb-lg-0 gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active d-flex align-items-center gap-2" aria-current="page"
+                            href="./index.html">
+                            <img src="./images/icons/home.svg" width="22px" alt="home">
+                            <span class="d-none d-sm-inline">Home</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex gap-sm-3 gap-1 align-items-center mt-lg-0">
+                    <a id="search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-search text-white-color" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </a>
+
+                    <div class="dropdown">
+                        <a class="dropdown-toggle fw-bold fs-6 text-white-color" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            EN
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow mt-4 p-2">
+                            <li class=""><a class="dropdown-item fs-6-1 d-flex align-items-center gap-2 rounded"
+                                    href="./register-ar.html">
+                                    <img src="images/flags/sa.svg" class="flag shadow-sm" alt="sa">
+                                    عربي</a></li>
+                            <li class=""><a class="dropdown-item fs-6-1 d-flex align-items-center gap-2 rounded"
+                                    href="./register.html">
+                                    <img src="images/flags/us.svg" class="flag shadow-sm" alt="en">
+                                    English</a></li>
+                        </ul>
+                    </div>
+                    <span class="d-none">
+                        <a class="btn login-btn px-3 d-sm-block d-none" href="./login.html">
+                            Login Now
+                        </a>
+                        <a href="./login.html" class="d-sm-none d-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-login"
+                                width="27" height="27" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M15 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                                <path d="M21 12h-13l3 -3" />
+                                <path d="M11 15l-3 -3" />
+                            </svg>
+                        </a>
+                    </span>
+                    <div class="dropdown d-none">
+                        <a class="dropdown-toggle fw-bold fs-6 text-white-color" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Yasser
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow mt-4 p-2">
+                            <li class="">
+                                <a href="./profile.html"
+                                    class="dropdown-item fs-6-1 d-flex align-items-center justify-content-between gap-2 rounded">
+                                    <span>Profile</span>
+                                    <i class="fas fa-user"></i>
+                                </a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="">
+                                <a
+                                    class="dropdown-item fs-6-1 d-flex align-items-center justify-content-between gap-2 rounded">
+                                    <span>Applications</span>
+                                    <i class="fas fa-globe"></i>
+                                </a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="">
+                                <a href="./index.html" id="logout"
+                                    class="dropdown-item fs-6-1 d-flex align-items-center justify-content-between gap-2 rounded text-danger">
+                                    <span>Logout</span>
+                                    <i class="fas fa-lock"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-vh-100 auth-bg d-none" id="loading-overlay">
+        <div class="container">
+            <div class="d-flex justify-content-between flex-column align-items-center py-4 min-vh-100">
+                <a class="navbar-brand mt-5" href="index.html">
+                    <img src="images/logo/logo.svg" alt="logo">
+                </a>
+                <div class="w-100">
+                    <div class="d-flex justify-content-center">
+                        <div class="lds-default" id="loader">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div id="proceed">
+                        <h1 class="text-white-color text-center fs-2 w-md-100 m-auto">
+                            In the proceed stage
+                        </h1>
+                        <p class="text-gray500 text-center mt-2 w-75 m-auto">
+                            Please wait a moment.
+                        </p>
+                    </div>
+                    <div id="success" class="d-none">
+                        <h1 class="text-white-color text-center fs-2 w-75 w-md-100 m-auto">
+                            Your account has been created successfully
+                        </h1>
+                        <p class="text-gray500 text-center mt-2 w-75 m-auto">
+                            Please check your email address
+                        </p>
+                        <div class="d-flex justify-content-center mt-2">
+                            <a class="btn btn-solid-main px-sm-5 px-3 m-auto" href="./login.html">
+                                Back to Login Page
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray500 text-center">
+                    @2023 sarie All Right Reserved.
+                </p>
+            </div>
+
+    </section>
+
+    <section class="row min-vh-100 g-0 justify-content-center register-stepper" id="auth">
+        <div class="col-xl-9 px-sm-5 px-3 py-4 auth-form bg-transparent d-flex align-items-center">
+            <div class="px-sm-5 px-4 w-100 global-card py-4">
+                <div class="d-flex justify-content-between align-items-center gap-3 flex-wrap pt-2 pb-5">
+                    <h4 class="text-white-color">Upgrade your account</h4>
+                    <div>
+                        <div class="fs-8 text-white-color mb-1"><span id="stepNumber">1</span> from 8</div>
+                        <div class="progress">
+                            <div class="progress-bar" id="progressBar" role="progressbar" aria-label="Basic example"
+                                style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stepper" id="stepper">
+                    <div class="step d-flex align-items-center flex-column gap-2" onclick="changeStep(0)">
+                        <div class="step-number">
+                            <span class="fs-5-2">1</span>
+                        </div>
+                        <h6 class="step-header fs-6-2">Request data</h6>
+                    </div>
+                    <div class="step d-flex align-items-center flex-column gap-2" onclick="changeStep(1)">
+                        <div class="step-number">
+                            <span class="fs-5-2">2</span>
+                        </div>
+                        <h6 class="step-header fs-6-2">Tax residency</h6>
+                    </div>
+                    <div class="step d-flex align-items-center flex-column gap-2" onclick="changeStep(2)">
+                        <div class="step-number">
+                            <span class="fs-5-2">3</span>
+                        </div>
+                        <h6 class="step-header fs-6-2">Identification card</h6>
+                    </div>
+                    <div class="step d-flex align-items-center flex-column gap-2" onclick="changeStep(3)">
+                        <div class="step-number">
+                            <span class="fs-5-2">4</span>
+                        </div>
+                        <h6 class="step-header fs-6-2">Investability</h6>
+                    </div>
+                    <div class="step d-flex align-items-center flex-column gap-2" onclick="changeStep(4)">
+                        <div class="step-number">
+                            <span class="fs-5-2">5</span>
+                        </div>
+                        <h6 class="step-header fs-6-2">ID card 2</h6>
+                    </div>
+                    <div class="step d-flex align-items-center flex-column gap-2" onclick="changeStep(5)">
+                        <div class="step-number">
+                            <span class="fs-5-2">6</span>
+                        </div>
+                        <h6 class="step-header fs-6-2">ID card 3</h6>
+                    </div>
+                    <div class="step d-flex align-items-center flex-column gap-2" onclick="changeStep(6)">
+                        <div class="step-number">
+                            <span class="fs-5-2">7</span>
+                        </div>
+                        <h6 class="step-header fs-6-2">ID card 4</h6>
+                    </div>
+                    <div class="step d-flex align-items-center flex-column gap-2" onclick="changeStep(7)">
+                        <div class="step-number">
+                            <span class="fs-5-2">8</span>
+                        </div>
+                        <h6 class="step-header fs-6-2">review</h6>
+                    </div>
+                </div>
+
+                <div id="stepContent" class="mt-sm-5 mt-4 text-white-color">
+                    <div id="step1" class="step-content">
+                        <div>
+                            <h4 class="fs-4-1 text-center text-capitalize">Applicant data</h4>
+                            <p class="text-muted text-center mt-2">Please take a selfie with your doc so that it is
+                                clearly
+                                visible and the shots do not
+                                cover your face.</p>
+                            <form action="" id="requestDataForm" class="mt-4">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <input type="text" id="fullName" class="form-control"
+                                                placeholder="Enter your full name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <input type="email" id="email" class="form-control"
+                                                placeholder="Enter your email address">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <input type="text" id="mobile" class="form-control"
+                                                placeholder="Enter your Mobile Number">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <input type="text" id="education" class="form-control"
+                                                placeholder="Enter your education">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <input type="text" id="company" class="form-control"
+                                                placeholder="Enter company Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <input type="text" id="address" class="form-control"
+                                                placeholder="Enter your address">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-6 col-md-6">
+                                        <div class="mb-4">
+                                            <input type="text" id="city" class="form-control"
+                                                placeholder="Enter your city">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-6  col-md-6">
+                                        <div class="mb-4">
+                                            <input type="text" id="region" class="form-control"
+                                                placeholder="Enter your region">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-6 col-md-6">
+                                        <div class="mb-4">
+                                            <input type="text" id="postalCode" class="form-control"
+                                                placeholder="Enter postal code">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <input type="text" id="name" class="form-control"
+                                                placeholder="Enter your company number">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <input type="text" id="country" class="form-control"
+                                                placeholder="Enter your country">
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <label>Show the country on your profile and badges</label>
+                                        <div class="d-flex gap-3 mt-2">
+                                            <div class="form-check d-flex align-items-center gap-1">
+                                                <input class="form-check-input" type="radio" name="showCountry"
+                                                    id="yes">
+                                                <label class="form-check-label" for="yes">
+                                                    Yes
+                                                </label>
+                                            </div>
+                                            <div class="form-check d-flex align-items-center gap-1">
+                                                <input class="form-check-input" type="radio" name="showCountry" id="no">
+                                                <label class="form-check-label" for="no">
+                                                    No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-end mt-4">
+                                        <button type="button" onclick="changeStep(1)"
+                                            class="btn btn-solid-main d-flex justify-content-center align-items-center gap-2">
+                                            Next
+                                            <i class="fas fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="step2" class="step-content" style="display: none;">
+                        <div>
+                            <h4 class="fs-4-1 text-center text-capitalize">
+                                Tax residency
+                            </h4>
+                            <p class="text-muted text-center mt-2">
+                                Tell us about your tax details. This is important to both of us
+                            </p>
+                            <form action="" id="taxResidencyForm" class="mt-4">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <select class="form-select" aria-label="professionalGroup">
+                                                <option selected>Professional group</option>
+                                                <option value="1">Professional group</option>
+                                                <option value="2">Professional group</option>
+                                                <option value="3">Professional group</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <select class="form-select" aria-label="nationality">
+                                                <option selected>Nationality</option>
+                                                <option value="1">Nationality</option>
+                                                <option value="2">Nationality</option>
+                                                <option value="3">Nationality</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <select class="form-select" aria-label="otherNationalities">
+                                                <option selected>Other nationalities</option>
+                                                <option value="1">Other nationalities</option>
+                                                <option value="2">Other nationalities</option>
+                                                <option value="3">Other nationalities</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <select class="form-select" aria-label="taxNumber">
+                                                <option selected>
+                                                    Tax identification number
+                                                </option>
+                                                <option value="1">
+                                                    Tax identification number
+                                                </option>
+                                                <option value="2">
+                                                    Tax identification number
+                                                </option>
+                                                <option value="3">
+                                                    Tax identification number
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <select class="form-select" aria-label="taxableInUS">
+                                                <option selected>Taxable in the US?</option>
+                                                <option value="1">Taxable in the US</option>
+                                                <option value="2">Taxable in the US</option>
+                                                <option value="3">Taxable in the US</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <div class="form-control d-flex justify-content-between align-items-center">
+                                            <span id="pdfCertificationFileName" class="text-truncate">Proof of your NTN
+                                                Tax ID
+                                                Certificate</span>
+                                            <label for="taxIdCertificate"
+                                                class="text-main-color px-2 py-1 bg-white-color rounded pointer">Upload
+                                                PDF
+                                                file</label>
+                                            <input type="file" id="taxIdCertificate" hidden accept="application/pdf"
+                                                name="taxIdCertificate" onchange="updateFileName()">
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <div class="form-check mb-3 d-flex align-items-center gap-2">
+                                            <input class="form-check-input" type="checkbox" value="taxableInUs"
+                                                id="taxableInUs">
+                                            <label class="form-check-label mb-0 fs-6 mt-1" for="taxableInUs">
+                                                Taxable in the US?
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3 d-flex align-items-center gap-2">
+                                            <input class="form-check-input" type="checkbox" value="taxableInUs2"
+                                                id="taxableInUs2">
+                                            <label class="form-check-label mb-0 fs-6 mt-1" for="taxableInUs2">
+                                                Taxable in the US?
+                                            </label>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center gap-2">
+                                            <input class="form-check-input" type="checkbox" value="taxableInUs3"
+                                                id="taxableInUs3">
+                                            <label class="form-check-label mb-0 fs-6 mt-1" for="taxableInUs3">
+                                                Taxable in the US?
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end gap-3 mt-4">
+                                    <button type="button" onclick="changeStep(0)"
+                                        class="btn btn-outline-main d-flex justify-content-center align-items-center gap-2">
+                                        <i class="fas fa-arrow-left"></i>
+                                        Back
+                                    </button>
+                                    <button type="button" onclick="changeStep(2)"
+                                        class="btn btn-solid-main d-flex justify-content-center align-items-center gap-2">
+                                        Next
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="step3" class="step-content" style="display: none">
+                        <div>
+                            <h4 class="fs-4-1 text-center text-capitalize">
+                                Indent documents
+                            </h4>
+                            <p class="text-muted text-center mt-2">
+                                Please take a selfie with your doc so that it is clearly visible and the shots do not
+                                cover your face.
+                            </p>
+                            <form action="" id="IndentDocumentsForm" class="mt-4">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7 col-11">
+                                        <label for="uploadDocs"
+                                            class="upload-file p-4 text-main-color d-flex justify-content-center align-items-center flex-column pointer">
+                                            <i class="fas fa-cloud-upload-alt fs-4-1"></i>
+                                            <h5 class="text-white-color text-center fs-5-2 mt-2">Upload documents</h5>
+                                            <span class="text-muted fs-8 mt-1">.jpg or .pdf must be larger than 500 KB
+                                                or 300
+                                                pixels</span>
+                                        </label>
+                                        <input type="file" name="uploadDocs" id="uploadDocs" hidden multiple>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end gap-3 mt-4">
+                                    <button type="button" onclick="changeStep(1)"
+                                        class="btn btn-outline-main d-flex justify-content-center align-items-center gap-2">
+                                        <i class="fas fa-arrow-left"></i>
+                                        Back
+                                    </button>
+                                    <button type="button" onclick="changeStep(3)"
+                                        class="btn btn-solid-main d-flex justify-content-center align-items-center gap-2">
+                                        Next
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="step4" class="step-content" style="display: none;">
+                        <div>
+                            <h4 class="fs-4-1 text-center text-capitalize">
+                                Indent documents
+                            </h4>
+                            <p class="text-muted text-center mt-2">
+                                Please take a selfie with your doc so that it is clearly visible and the shots do not
+                                cover your face.
+                            </p>
+                            <form action="" id="documentsForm" class="mt-5 documentsForm">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-5 mb-4">
+                                        <div class="check-container">
+                                            <div class="form-check d-flex align-items-center gap-2">
+                                                <input class="form-check-input" type="checkbox" value="1"
+                                                    id="percentage1">
+                                                <label class="form-check-label mt-1" for="percentage1">
+                                                    Percentage of investment shares
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 mb-4">
+                                        <div class="check-container">
+                                            <div class="form-check d-flex align-items-center gap-2">
+                                                <input class="form-check-input" type="checkbox" value="2"
+                                                    id="percentage2">
+                                                <label class="form-check-label mt-1" for="percentage2">
+                                                    Percentage of investment shares </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 mb-4">
+                                        <div class="check-container">
+                                            <div class="form-check d-flex align-items-center gap-2">
+                                                <input class="form-check-input" type="checkbox" value="3"
+                                                    id="percentage3">
+                                                <label class="form-check-label mt-1" for="percentage3">
+                                                    Percentage of investment shares
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 mb-4">
+                                        <div class="check-container">
+                                            <div class="form-check d-flex align-items-center gap-2">
+                                                <input class="form-check-input" type="checkbox" value="4"
+                                                    id="percentage4">
+                                                <label class="form-check-label mt-1" for="percentage4">
+                                                    Percentage of investment shares </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 mb-4">
+                                        <div class="check-container">
+                                            <div class="form-check d-flex align-items-center gap-2">
+                                                <input class="form-check-input" type="checkbox" value="5"
+                                                    id="percentage5">
+                                                <label class="form-check-label mt-1" for="percentage5">
+                                                    Percentage of investment shares </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 mb-4">
+                                        <div class="check-container">
+                                            <div class="form-check d-flex align-items-center gap-2">
+                                                <input class="form-check-input" type="checkbox" value="6"
+                                                    id="percentage6">
+                                                <label class="form-check-label mt-1" for="percentage6">
+                                                    Percentage of investment shares </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end gap-3 mt-4">
+                                    <button type="button" onclick="changeStep(2)"
+                                        class="btn btn-outline-main d-flex justify-content-center align-items-center gap-2">
+                                        <i class="fas fa-arrow-left"></i>
+                                        Back
+                                    </button>
+                                    <button type="button" onclick="changeStep(4)"
+                                        class="btn btn-solid-main d-flex justify-content-center align-items-center gap-2">
+                                        Next
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="step5" class="step-content" style="display: none;">
+                        <div>
+                            <h4 class="fs-4-1 text-center text-capitalize">
+                                Indent documents2
+                            </h4>
+                            <p class="text-muted text-center mt-2">
+                                Please take a selfie with your doc so that it is clearly visible and the shots do not
+                                cover your face.
+                            </p>
+                            <form action="" id="documentsForm2" class="mt-4">
+                                <div class="row">
+                                    <div class="col-md-12 mb-4">
+                                        <input type="text" id="name" name="id" class="form-control"
+                                            placeholder="Enter your name">
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <textarea type="text" id="bio" class="form-control textarea" name="bio"
+                                            placeholder="Enter Personal biography"></textarea>
+                                    </div>
+                                    <div class="col-lg-6 mb-4">
+                                        <textarea type="text" id="describeMarket" class="form-control textarea"
+                                            name="describeMarket"
+                                            placeholder="Describe the market, target groups and end beneficiaries"></textarea>
+                                    </div>
+                                    <div class="col-lg-6 mb-4">
+                                        <textarea type="text" id="describeMainProduct" class="form-control textarea"
+                                            name="describeMainProduct"
+                                            placeholder="Describe your main products/services"></textarea>
+                                    </div>
+                                    <div class="col-lg-6 mb-4">
+                                        <textarea type="text" id="whatAreInnovation" class="form-control textarea"
+                                            name="whatAreInnovation"
+                                            placeholder="What are the innovation elements in your product/service?"></textarea>
+                                    </div>
+                                    <div class="col-lg-6 mb-4">
+                                        <textarea type="text" id="explainHowBusinessWork" class="form-control textarea"
+                                            name="explainHowBusinessWork"
+                                            placeholder="Explain how your business model works. How does your organization generate revenue?"></textarea>
+                                    </div>
+                                    <div class="col-lg-6 mb-4">
+                                        <textarea type="text" id="companyAims" class="form-control textarea"
+                                            name="companyAims"
+                                            placeholder="How does the company aim to grow in the next three years and what kind of growth is expected in numbers?"></textarea>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end gap-3 mt-4">
+                                    <button type="button" onclick="changeStep(3)"
+                                        class="btn btn-outline-main d-flex justify-content-center align-items-center gap-2">
+                                        <i class="fas fa-arrow-left"></i>
+                                        Back
+                                    </button>
+                                    <button type="button" onclick="changeStep(5)"
+                                        class="btn btn-solid-main d-flex justify-content-center align-items-center gap-2">
+                                        Next
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="step6" class="step-content" style="display: none;">
+                        <div>
+                            <h4 class="fs-4-1 text-center text-capitalize">
+                                Indent documents2
+                            </h4>
+                            <p class="text-muted text-center mt-2">
+                                Please take a selfie with your doc so that it is clearly visible and the shots do not
+                                cover your face.
+                            </p>
+                            <form action="" id="documentsForm3" class="mt-4">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <select class="form-select" aria-label="team">
+                                                <option selected>
+                                                    How is the team currently taking advantage of the support available
+                                                    for innovation and entrepreneurship (e.g. training centres,
+                                                    incubators, co-working spaces, etc.)?
+                                                </option>
+                                                <option value="Training centers">Training centers</option>
+                                                <option value="Nurseries">Nurseries</option>
+                                                <option value="Coworking spaces">Coworking spaces</option>
+                                                <option value="Another">Another group</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <select class="form-select" aria-label="financialSpport">
+                                                <option selected>
+                                                    What other financial or non-financial support has your company
+                                                    received in the past two years and/or is expected to receive in the
+                                                    coming year (for example, grants or support programmes)
+                                                </option>
+                                                <option value="1">There is no financial support</option>
+                                                <option value="2">0-10 thousand dollars</option>
+                                                <option value="3">More than 10 thousand dollars</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-4">
+                                        <textarea type="text" id="mainActivities" class="form-control textarea"
+                                            name="mainActivities"
+                                            placeholder="What are the main activities you want to implement during the incubation period?"></textarea>
+                                    </div>
+                                    <div class="col-lg-6 mb-4">
+                                        <textarea type="text" id="estimatedFinancial" class="form-control textarea"
+                                            name="estimatedFinancial"
+                                            placeholder="Provide the estimated financial impact of the product/service (one year after implementation in terms of revenue, profit, investment, etc.)"></textarea>
+                                    </div>
+                                    <div class="col-lg-6 mb-4">
+                                        <textarea type="text" id="investment" class="form-control textarea"
+                                            name="investment" placeholder="Business investment pitch"></textarea>
+                                    </div>
+                                    <div class="col-lg-6 mb-4">
+                                        <textarea type="text" id="financialPlan" class="form-control textarea"
+                                            name="financialPlan" placeholder="Financial plan"></textarea>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end gap-3 mt-4">
+                                    <button type="button" onclick="changeStep(4)"
+                                        class="btn btn-outline-main d-flex justify-content-center align-items-center gap-2">
+                                        <i class="fas fa-arrow-left"></i>
+                                        Back
+                                    </button>
+                                    <button type="button" onclick="changeStep(6)"
+                                        class="btn btn-solid-main d-flex justify-content-center align-items-center gap-2">
+                                        Next
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="step7" class="step-content" style="display: none;">
+                        <div>
+                            <h4 class="fs-4-1 text-center text-capitalize">
+                                Indent documents3
+                            </h4>
+                            <p class="text-muted text-center mt-2">
+                                Please take a selfie with your doc so that it is clearly visible and the shots do not
+                                cover your face.
+                            </p>
+                            <form action="" id="documentsForm4" class="mt-4">
+                                <div class="mb-4">
+                                    <label class="label-form fs-6 mb-2">Tell us your idea in a 2-minute video. Please
+                                        answer the
+                                        following questions in the video</label>
+                                    <div class="form-control d-flex justify-content-between align-items-center">
+                                        <span id="videoFileName" class="text-truncate">Add video</span>
+                                        <label for="video"
+                                            class="text-main-color px-2 py-1 bg-white-color rounded pointer">Upload
+                                            video
+                                        </label>
+                                        <input type="file" id="video" hidden accept="video/*" name="video"
+                                            onchange="updateVideo()">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end gap-3 mt-5">
+                                    <button type="button" onclick="changeStep(5)"
+                                        class="btn btn-outline-main d-flex justify-content-center align-items-center gap-2">
+                                        <i class="fas fa-arrow-left"></i>
+                                        Back
+                                    </button>
+                                    <button type="button" onclick="changeStep(7)"
+                                        class="btn btn-solid-main d-flex justify-content-center align-items-center gap-2">
+                                        Next
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="step8" class="step-content" style="display: none;">
+                        <div>
+                            <h4 class="fs-4-1 text-center text-capitalize">
+                                Final submission
+                            </h4>
+                            <p class="text-muted text-center mt-2">
+                                Please take a selfie with your doc so that it is clearly visible and the shots do not
+                                cover your face.
+                            </p>
+                            <form action="" id="finalSubmittion" class="mt-4">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <select class="form-select" aria-label="hours">
+                                                <option selected>Give hours</option>
+                                                <option value="1">Give hours</option>
+                                                <option value="2">Give hours</option>
+                                                <option value="3">Give hours</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <select class="form-select" aria-label="talentNotices">
+                                                <option selected>Talent notices</option>
+                                                <option value="1">Talent notices</option>
+                                                <option value="2">Talent notices</option>
+                                                <option value="3">Talent notices</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-4">
+                                            <select class="form-select" aria-label="supportMonths">
+                                                <option selected>Support for months</option>
+                                                <option value="1">Support for months</option>
+                                                <option value="2">Support for months</option>
+                                                <option value="3">Support for months</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-check mb-3 d-flex align-items-center gap-2">
+                                            <input class="form-check-input" type="checkbox" value="networkActivity"
+                                                id="networkActivity">
+                                            <label class="form-check-label mb-0 fs-6 mt-1" for="networkActivity">
+                                                Network activity
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check mb-3 d-flex align-items-center gap-2">
+                                            <input class="form-check-input" type="checkbox" value="dailyChallenge"
+                                                id="dailyChallenge">
+                                            <label class="form-check-label mb-0 fs-6 mt-1" for="dailyChallenge">
+                                                Daily creative challenge
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4 mt-2">
+                                        <label class="fs-6">
+                                            Notice summary
+                                        </label>
+                                        <div class="d-flex gap-3 mt-2">
+                                            <div class="form-check d-flex align-items-center gap-1">
+                                                <input class="form-check-input" type="radio" name="noticeSummary"
+                                                    id="yes">
+                                                <label class="form-check-label" for="yes">
+                                                    Yes
+                                                </label>
+                                            </div>
+                                            <div class="form-check d-flex align-items-center gap-1">
+                                                <input class="form-check-input" type="radio" name="noticeSummary"
+                                                    id="no">
+                                                <label class="form-check-label" for="no">
+                                                    No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end gap-3 mt-5">
+                                    <button type="button" onclick="changeStep(6)"
+                                        class="btn btn-outline-main d-flex justify-content-center align-items-center gap-2">
+                                        <i class="fas fa-arrow-left"></i>
+                                        Back
+                                    </button>
+                                    <button type="button"
+                                        class="btn btn-solid-main d-flex justify-content-center align-items-center gap-2">
+                                        Submit
+                                        <i class="fas fa-save"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="js/jquary.js"></script>
+<script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
