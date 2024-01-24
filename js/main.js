@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function loginUser() {
     setLoadingOverlay();
+    window.localStorage.setItem('isLogin', true);
     setTimeout(() => {
-      window.localStorage.setItem('isLogin', true);
       hideElement('loading-overlay');
     }, 4000);
   }
