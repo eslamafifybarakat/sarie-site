@@ -11,6 +11,15 @@
 .scaleX-rtl {
   transform: scaleX(-1) !important;
 }
+.form-check {
+  padding-right: 1.5em !important;
+  padding-left: inherit !important;
+}
+.form-check .form-check-input {
+  float: right !important;
+  margin-right: -1.5em !important;
+  margin-left: inherit !important;
+}
 a,
 a:hover,
 a:focus {
