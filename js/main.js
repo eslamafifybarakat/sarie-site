@@ -21,22 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 2500);
   }
 
-  function redirectToIndex() {
-    const indexPage = window.location.href.includes('ar') ? 'index-ar.html' : 'index.html';
-    window.location.href = indexPage;
-  }
-
-  function redirectToResetPassword() {
-    const resetPasswordPage = window.location.href.includes('ar') ? 'reset-password-ar.html' : 'reset-password.html';
-    window.location.href = resetPasswordPage;
-  }
-
   function loginUser() {
     setLoadingOverlay();
     setTimeout(() => {
       window.localStorage.setItem('isLogin', true);
       hideElement('loading-overlay');
-      redirectToIndex();
     }, 4000);
   }
 
@@ -48,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
     setLoadingOverlay();
     setTimeout(() => {
       hideElement('loading-overlay');
-      redirectToResetPassword();
     }, 4000);
   }
 
