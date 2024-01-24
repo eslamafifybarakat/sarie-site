@@ -13,13 +13,21 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   window.addEventListener('scroll', handleScroll);
   // ==============
-
+  if (window.localStorage.getItem('isLogin')) {
+    document.getElementById('user-info').classList.remove('d-none');
+    document.getElementById('login-btn').classList.add('d-none');
+  }
+  // ==================
+  document.getElementById('logout').addEventListener('click', function () {
+    window.localStorage.removeItem('isLogin');
+  });
   // ===============LOGIN====================
   document.getElementById('login').addEventListener('click', function () {
     document.getElementById('loading-overlay').classList.remove('d-none');
     setTimeout(() => {
       document.getElementById('success').classList.remove('d-none');
       document.getElementById('proceed').classList.add('d-none');
+      window.localStorage.setItem('isLogin', true);
     }, 2500);
     setTimeout(function () {
       document.getElementById('loading-overlay').classList.add('d-none');
@@ -62,4 +70,5 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById('proceed').classList.add('d-none');
     }, 2500);
   });
+
 });
