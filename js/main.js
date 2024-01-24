@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const userLoggedIn = window.localStorage.getItem('isLogin') === 'true';
 
   function handleScroll() {
-    navbar.classList.toggle('scrolled', window.scrollY > 30);
+    navbar.classList.toggle('scrolled', window.scrollY > 10);
   }
   // ===============AUTH=====================
   function showElement(elementId) {
