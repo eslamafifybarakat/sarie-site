@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.getElementById('navbar');
 
@@ -10,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
       navbar.classList.remove('scrolled');
     }
   }
-
   window.addEventListener('scroll', handleScroll);
+  // ==============
 
   // ===============LOGIN====================
   document.getElementById('login').addEventListener('click', function () {
@@ -22,20 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 2500);
     setTimeout(function () {
       document.getElementById('loading-overlay').classList.add('d-none');
-      window.location.href = 'index.html';
-    }, 4000);
-  });
-
-
-  document.getElementById('login-ar').addEventListener('click', function () {
-    document.getElementById('loading-overlay').classList.remove('d-none');
-    setTimeout(() => {
-      document.getElementById('success').classList.remove('d-none');
-      document.getElementById('proceed').classList.add('d-none');
-    }, 2500);
-    setTimeout(function () {
-      document.getElementById('loading-overlay').classList.add('d-none');
-      window.location.href = 'index-ar.html';
+      if (window.location.href.includes('ar')) {
+        window.location.href = 'index-ar.html';
+      } else {
+        window.location.href = 'index.html';
+      }
     }, 4000);
   });
   // ======================
@@ -45,9 +37,29 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById('success').classList.remove('d-none');
       document.getElementById('proceed').classList.add('d-none');
     }, 2500);
+  });
+  // ============================
+  document.getElementById('forget-password').addEventListener('click', function () {
+    document.getElementById('loading-overlay').classList.remove('d-none');
+    setTimeout(() => {
+      document.getElementById('success').classList.remove('d-none');
+      document.getElementById('proceed').classList.add('d-none');
+    }, 2500);
     setTimeout(function () {
-      // document.getElementById('loading-overlay').classList.add('d-none');
+      document.getElementById('loading-overlay').classList.add('d-none');
+      if (window.location.href.includes('ar')) {
+        window.location.href = 'reset-password-ar.html';
+      } else {
+        window.location.href = 'reset-password.html';
+      }
     }, 4000);
   });
+  // ==========================
+  document.getElementById('reset-password').addEventListener('click', function () {
+    document.getElementById('loading-overlay').classList.remove('d-none');
+    setTimeout(() => {
+      document.getElementById('success').classList.remove('d-none');
+      document.getElementById('proceed').classList.add('d-none');
+    }, 2500);
+  });
 });
-
