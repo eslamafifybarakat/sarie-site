@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  new WOW().init();
   // ====================SCROLL==============
   const navbar = document.getElementById('navbar');
   const userLoggedIn = window.localStorage.getItem('isLogin') === 'true';
