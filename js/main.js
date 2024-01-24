@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
       showElement('success');
       hideElement('proceed');
+      hideElement('loader');
     }, 2500);
   }
 
