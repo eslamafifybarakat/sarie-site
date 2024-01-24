@@ -68,13 +68,13 @@ let currentStep = 0;
 
 function changeStep(step) {
   // Hide current step content
-  document.getElementById(`step${currentStep + 1}`).style.display = 'none';
+  document.getElementById(`step${currentStep + 1}`) ? document.getElementById(`step${currentStep + 1}`).style.display = 'none' : '';
 
   // Update current step
   currentStep = step;
 
   // Show new step content
-  document.getElementById(`step${currentStep + 1}`).style.display = 'block';
+  document.getElementById(`step${currentStep + 1}`) ? document.getElementById(`step${currentStep + 1}`).style.display = 'block' : '';
 
   // Update progress bar
   const progressPercentage = (currentStep + 1) * (100 / 8); // Assuming 8 steps
@@ -87,11 +87,11 @@ function setProgress(progressPercentage) {
   const stepNumber = document.getElementById('stepNumber');
 
   // Update progress bar width and content
-  progressBar.style.width = `${progressPercentage}%`;
-  progressBar.innerText = `${Math.round(progressPercentage)}%`;
+  progressBar ? progressBar.style.width = `${progressPercentage}%` : '';
+  progressBar ? progressBar.innerText = `${Math.round(progressPercentage)}%` : '';
 
   // Update step number
-  stepNumber.innerText = currentStep + 1;
+  stepNumber ? stepNumber.innerText = currentStep + 1 : '';
 }
 function updateStepStyles() {
   const steps = document.querySelectorAll('.step');
@@ -118,19 +118,19 @@ function updateVideo() {
   fileNameSpan.textContent = inputFile.files[0].name;
 }
 
-document.getElementById("requestDataForm").addEventListener("submit", function (event) {
-  event.preventDefault(); // Prevent the default form submission
+// document.getElementById("requestDataForm").addEventListener("submit", function (event) {
+//   event.preventDefault(); // Prevent the default form submission
 
-  // Get the form element by its id
-  var form = event.target;
+//   // Get the form element by its id
+//   var form = event.target;
 
-  // Loop through all form elements
-  for (var i = 0; i < form.elements.length; i++) {
-    var element = form.elements[i];
+//   // Loop through all form elements
+//   for (var i = 0; i < form.elements.length; i++) {
+//     var element = form.elements[i];
 
-    // Check if the element has a value (ignore buttons and other non-input elements)
-    if (element.type !== "button" && element.type !== "submit" && element.value !== undefined) {
-      console.log(element.name + ": " + element.value);
-    }
-  }
-});
+//     // Check if the element has a value (ignore buttons and other non-input elements)
+//     if (element.type !== "button" && element.type !== "submit" && element.value !== undefined) {
+//       console.log(element.name + ": " + element.value);
+//     }
+//   }
+// });
